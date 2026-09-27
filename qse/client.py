@@ -84,10 +84,64 @@ class Blocked(Exception):
     """Got a 200 that isn't data — WAF challenge or an error page."""
 
 
+class Unreachable(Exception):
+    """qe.com.qa cannot be reached from this machine at all."""
+
+
+# ------------------------------------------------------------- the breaker
+# Building a dashboard walks back through the report tree one session at a time,
+# which is well over a hundred sequential requests. On a host that cannot route
+# to qe.com.qa every one of them waits out the full timeout, so a page that
+# should fail in seconds instead hangs for over an hour — and because Streamlit
+# runs a script top to bottom, it takes every other tab down with it, including
+# the two that need no network at all.
+#
+# So the first couple of network-level failures are allowed, and after that the
+# host is presumed unreachable and further requests fail instantly. An HTTP
+# error — a 404 for a non-trading day, say — is the opposite signal: the host
+# answered, so the breaker resets.
+
+BREAKER_AFTER = 2        # consecutive network failures before giving up
+BREAKER_RESET = 300      # seconds before trying the host again
+
+_failures = 0
+_tripped_at = 0.0
+
+
+def reachable() -> bool:
+    """False while the breaker is open."""
+    if _failures < BREAKER_AFTER:
+        return True
+    return (time.time() - _tripped_at) >= BREAKER_RESET
+
+
+def _guard(path: str) -> None:
+    if not reachable():
+        raise Unreachable(
+            f"qe.com.qa is not reachable from this machine "
+            f"({_failures} consecutive failures); not retrying {path}"
+        )
+
+
+def _failed() -> None:
+    global _failures, _tripped_at
+    _failures += 1
+    if _failures >= BREAKER_AFTER:
+        _tripped_at = time.time()
+
+
+def _answered() -> None:
+    """Any HTTP response at all, 404 included, proves the host is there."""
+    global _failures
+    _failures = 0
+
+
 @dataclass
 class Client:
     cache_dir: Path | None = None
-    timeout: int = 30
+    # 30s suited a CLI sweep that could afford to wait. In a web request it is
+    # the difference between a tab that fails and a tab that never returns.
+    timeout: int = 12
     pause: float = 0.0  # seconds between live requests; be polite on big sweeps
 
     # ---------------------------------------------------------------- raw GET
@@ -107,8 +161,18 @@ class Client:
                 "X-Requested-With": "XMLHttpRequest",
             },
         )
-        with urllib.request.urlopen(req, timeout=self.timeout) as resp:
-            return resp.read()
+        _guard(path)
+        try:
+            with urllib.request.urlopen(req, timeout=self.timeout) as resp:
+                body = resp.read()
+        except urllib.error.HTTPError:
+            _answered()
+            raise
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            _failed()
+            raise Unreachable(f"POST {path}: {exc}") from exc
+        _answered()
+        return body
 
     def get(self, path: str, *, cacheable: bool = True) -> bytes:
         """GET a path on qe.com.qa, with an optional on-disk cache.
@@ -129,13 +193,19 @@ class Client:
                 "Referer": HOST + "/",
             },
         )
+        _guard(path)
         try:
             with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                 body = resp.read()
         except urllib.error.HTTPError as exc:
+            _answered()
             if exc.code == 404:
                 raise NotAvailable(path) from exc
             raise
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            _failed()
+            raise Unreachable(f"GET {path}: {exc}") from exc
+        _answered()
         if self.pause:
             time.sleep(self.pause)
 

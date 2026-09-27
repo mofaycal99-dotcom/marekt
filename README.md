@@ -366,6 +366,46 @@ comparison PDFs here hold June against July 2026 — **one delta**, on which eve
 returns nothing at all. Two snapshots support a difference; twenty-four support a finding. It is the same
 argument the tick archive makes one timescale down.
 
+## Deploying it
+
+The app runs anywhere with Python and two packages. What decides the host is not
+Streamlit — it is two facts about the data.
+
+**The tick archive needs a real disk.** `out/archive/` is the one thing that cannot be
+rebuilt, because qe.com.qa publishes no intraday history. Hosting with an ephemeral
+filesystem — Streamlit Community Cloud, Cloud Run, anything that resets on redeploy —
+loses it. That matters for the Market tab's `1D` view and for nothing else: **the Register
+and Register scan tabs never touch the network or the archive**, so a demo of the register
+work deploys happily onto free, ephemeral hosting.
+
+**Not every host can reach qe.com.qa.** `www.qe.com.qa` was unreachable from the
+environment this was built in, and a cloud region may be no better. Test it before
+committing to a provider.
+
+`.gitignore` keeps the client PDFs, the DeepSeek key and the regenerable feed caches out
+of the repo, while committing `out/synth/` — a deployed app has no chance to run the
+register generator before its first request, so the demo data has to ship with it. The
+key is read from the environment, then Streamlit's secrets, then `.env`, so the same code
+runs locally and on a host without edits.
+
+### The breaker, and why a hang is worse than an error
+
+Building a dashboard walks the report tree one session at a time — well over a hundred
+sequential requests. On a host with no route to qe.com.qa, every one of them waits out the
+full timeout: **150 requests at the old 30-second timeout is 75 minutes of hanging.** And
+because Streamlit executes a script top to bottom, that hang took down every other tab
+with it, including the two that need no network at all. The first deployment did exactly
+this — it sat on "Building from qe.com.qa …" and nothing else ever rendered.
+
+`qse/client.py` now stops after **two consecutive network-level failures** and fails
+instantly for the next five minutes, so the tab reports the problem in about twenty
+seconds and the rest of the app renders. An HTTP response of any kind — a 404 for a
+non-trading day included — proves the host is there and resets the breaker, so an ordinary
+gap in the report tree is never mistaken for an outage.
+
+The market and news tabs then say plainly that the server cannot reach the exchange, and
+point at the two tabs that do not need it.
+
 ## Verification
 
 The daily tab pinned to 2026-08-13 was compared field by field with the source PDF.

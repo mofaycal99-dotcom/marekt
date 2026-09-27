@@ -2307,8 +2307,25 @@ def safe(render, label: str) -> None:
     unreachable. Only the market and news tabs touch the network; catching here
     keeps the offline tabs usable.
     """
+    from qse.client import Unreachable
+
     try:
         render()
+    except Unreachable as exc:
+        # Not a bug and not worth a stack trace: the host this is deployed on
+        # cannot route to qe.com.qa. Say so plainly, and point at the tabs that
+        # do not need it — they are most of the app.
+        st.warning(
+            f"**{label} needs live data from qe.com.qa, and this server cannot "
+            f"reach it.**\n\nThe exchange is not blocking anything — the host "
+            f"running this app has no route to it. Nothing is wrong with the "
+            f"data or the code.\n\n**Register** and **Register scan** work "
+            f"normally: they run entirely on the register and never touch the "
+            f"network.",
+            icon=":material/cloud_off:",
+        )
+        with st.expander("Technical detail"):
+            st.code(str(exc))
     except Exception as exc:                                # noqa: BLE001
         st.error(f"{label} could not be built: {type(exc).__name__} — {exc}")
         with st.expander("Details"):
