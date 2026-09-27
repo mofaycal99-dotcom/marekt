@@ -137,11 +137,22 @@ def build(path):
     f.append(table(OUTCOMES, [12*mm, 38*mm, 68*mm, 50*mm]))
 
     f.append(P("5. Functional business requirements", "h1"))
-    f.append(P("Priority: M must, S should, C could, W won't (this phase).", "note"))
-    f.append(table(FUNCTIONAL, [12*mm, 118*mm, 10*mm, 28*mm]))
+    f.append(P("Priority: M must, S should, C could, W won't (this phase). The "
+               "Security block (FR-29 to FR-36) is foundational, not a later "
+               "phase - see constraint C-10.", "note"))
+    f.append(table(FUNCTIONAL, [12*mm, 116*mm, 10*mm, 30*mm]))
 
     f.append(P("6. Non-functional requirements", "h1"))
     f.append(table(NFR, [40*mm, 18*mm, 110*mm]))
+
+    f.append(P("6a. Access control matrix", "h1"))
+    f.append(P("Deny by default. A blank or \"No\" cell is a denial, not an "
+               "omission - see rule R12.", "note"))
+    f.append(table(ROLES, [40*mm, 18*mm, 21*mm, 28*mm, 26*mm, 20*mm, 15*mm]))
+    f.append(P(ROLES_NOTE, "note"))
+    f.append(P("Note that the Administrator role manages access and cannot read "
+               "register data. Separation of duties is deliberate and is the "
+               "first control an auditor will ask about.", "note"))
 
     f.append(P("7. Data and knowledge sources", "h1"))
     f.append(P("Read this section first if you are estimating. The licensing position "
@@ -173,7 +184,10 @@ def build(path):
                "evidence. BO-1 to FR-1..FR-5, FR-11, FR-24. BO-2 to FR-12, FR-14. "
                "BO-3 to FR-18, FR-19 and D1..D4. BO-4 to FR-20..FR-22 and D5..D7. "
                "BO-5 to FR-13, FR-15, R1, R2 and the reconciliation tests. BO-6 to "
-               "FR-6, FR-7, N5."))
+               "FR-6, FR-7, N5. Confidentiality of the register traces to FR-29 "
+               "through FR-36, the matrix in section 6a, rules R12 and R13, and "
+               "prohibitions N6 and N8 to N10. Source acquisition traces to FR-25 "
+               "through FR-28, rules R10 and R11, and prohibition N11."))
     f.append(P("Acceptance evidence for the register capabilities already exists as an "
                "automated suite of 154 checks that runs without network access, "
                "asserting that every cut and every segment reconciles to the snapshot "

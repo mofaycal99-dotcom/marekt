@@ -182,21 +182,55 @@ FUNCTIONAL = [
     ["FR-22", "Exclude holders not present for the full comparison window from correlation analysis, and report how many were excluded and why.", "M", "Scan"],
     ["FR-23", "Answer natural-language questions over the rendered state, quoting only figures present in it and stating plainly when a figure is absent.", "S", "Assistant"],
     ["FR-24", "Export the register comparison, the KPI set and the month-over-month trend as files suitable for a board pack.", "M", "Export"],
-    ["FR-25", "Authenticate every user and authorise by role. Register data must not be reachable by URL alone.", "M", "Platform"],
-    ["FR-26", "Record an audit trail of who viewed or exported register data, and when.", "M", "Platform"],
-    ["FR-27", "Degrade per capability. A failure or outage in one data source must not prevent the others from rendering.", "M", "Platform"],
+    ["FR-25", "Acquire every external source through its official or documented API where one exists. API first, always.", "M", "Ingestion"],
+    ["FR-26", "Use scraping only as a fallback where no API is available, and only with the reason recorded against that source in section 7.", "M", "Ingestion"],
+    ["FR-27", "Record, per ingestion run and per source, which path was used - API or fallback - and alert when a source silently drops from API to fallback.", "M", "Ingestion"],
+    ["FR-28", "Isolate every source behind an adapter with a single interface, so replacing a scraper with a licensed API changes one component and nothing downstream.", "M", "Ingestion"],
+    ["FR-29", "Authenticate every user against the client's own identity provider by single sign-on. No local passwords, no shared accounts.", "M", "Security"],
+    ["FR-30", "Enforce role-based access control using the role matrix in section 6a. Deny by default: a capability not explicitly granted to a role is unreachable by that role.", "M", "Security"],
+    ["FR-31", "Restrict the Register and Register scan capabilities to the Executive role. They must not be reachable by any other role, by direct URL, by export, or through the assistant.", "M", "Security"],
+    ["FR-32", "Scope the assistant to the caller's role. A question asked by a user without register access must not be answered from register data.", "M", "Security"],
+    ["FR-33", "Encrypt register data in transit (TLS 1.2 or better) and at rest. Holder identifiers and names to be encrypted at the field level, with keys held in a managed key store separate from the database.", "M", "Security"],
+    ["FR-34", "Require step-up re-authentication before any export of register data.", "S", "Security"],
+    ["FR-35", "Record a tamper-evident audit entry for every register view, query and export: who, what, when, from where. Retain per the client's policy.", "M", "Security"],
+    ["FR-36", "Expire idle sessions and revoke access immediately when a user is removed at the identity provider.", "M", "Security"],
+    ["FR-37", "Degrade per capability. A failure or outage in one data source must not prevent the others from rendering.", "M", "Platform"],
 ]
+
+# Section 6a - the access matrix. Deny by default; a blank cell is a denial, not
+# an omission. Note that the Administrator manages access and cannot read
+# register data: separation of duties is the point, and it is the control an
+# auditor will ask about first.
+ROLES = [
+    ["Role", "Market", "Listening", "Register", "Register scan", "Export", "Admin"],
+    ["Executive - CEO, CFO", "Yes", "Yes", "Yes", "Yes", "Yes", "No"],
+    ["IR Manager", "Yes", "Yes", "On explicit grant", "No", "Market only", "No"],
+    ["Analyst", "Yes", "Yes", "No", "No", "No", "No"],
+    ["Auditor", "No", "No", "Read-only, logged", "Read-only, logged", "No", "No"],
+    ["Administrator", "No", "No", "No", "No", "No", "Yes"],
+]
+
+ROLES_NOTE = (
+    "The client's instruction was that the register is reachable only with the "
+    "CEO's account. This is written as a named Executive role rather than a "
+    "single shared login, and the distinction matters: a shared account has no "
+    "attribution, so the audit trail required by FR-35 cannot say who looked at "
+    "the register; it cannot be revoked for one person; and it cannot be "
+    "extended to the CFO without handing over the CEO's credentials. The role "
+    "carries exactly the access asked for and starts with one member. Confirm "
+    "with the sponsor before build."
+)
 
 NFR = [
     ["Quality", "Required", "Target / notes"],
     ["Sovereignty / data residency", "Yes",
-     "Shareholder register data is client-confidential and identifies individuals. Residency to be confirmed with the client before any host is chosen. The prototype's language model is a third-party API outside the region - see R-6."],
-    ["Security & identity", "Yes",
-     "Authentication mandatory (FR-25); role-based authorisation separating market data from register data; secrets held in a managed store, never in the repository."],
+     "Shareholder register data is client-confidential and identifies individuals. Residency to be confirmed with the client before any host is chosen. The prototype's language model is a third-party API outside the region - see S7 and C-7."],
+    ["Security & identity", "Yes - highest priority",
+     "Single sign-on against the client's identity provider; role-based access control, deny by default; Register and Register scan restricted to the Executive role; encryption in transit and at rest with field-level encryption of holder identity; step-up re-authentication before export; tamper-evident audit of every register access. Secrets in a managed key store, never in the repository. See FR-29 to FR-36 and the matrix in section 6a."],
     ["Robustness", "Yes",
      "Ingestion must be resumable and idempotent. A partial or failed market fetch must not corrupt the archive, and re-running a month's register ingest must not duplicate it."],
     ["Observability & audit", "Yes",
-     "Every figure traceable to source. Ingestion runs logged with source, timestamp and outcome. Register access audited (FR-26)."],
+     "Every figure traceable to source. Ingestion runs logged with source, timestamp and outcome. Register access audited (FR-35)."],
     ["Scalability", "Should",
      "Single issuer at launch. Design for multiple issuers and multiple registers; the analysis layer is already issuer-agnostic, the data layer is not."],
     ["Performance & cost", "Yes",
@@ -210,10 +244,10 @@ NFR = [
 SOURCES = [
     ["#", "Source", "Type", "Access", "Status"],
     ["S1", "Exchange market data - prices, OHLCV, index and sector levels, fundamentals",
-     "Commodity market data", "Currently scraped from the public website; no licence",
-     "MUST be replaced by a licensed feed. Widely available from global vendors."],
+     "Commodity market data", "API first: licensed vendor or exchange API. Fallback: the public endpoints mapped in API_REFERENCE.md",
+     "MUST be replaced by a licensed feed. Widely available from global vendors. Note the current path is undocumented HTTP endpoints rather than page scraping, so the adapter shape is already API-like."],
     ["S2", "Ownership by nationality and investor type; shareholder activity by nationality and investor type; insider trades",
-     "Exchange-proprietary", "Currently scraped; no licence",
+     "Exchange only", "Currently scraped; no licence. No API offered",
      "HIGH RISK. Not a standard product in global market-data catalogues. Realistically available only from the exchange itself or a Gulf specialist. May not be licensable at all."],
     ["S3", "Per-holder shareholder register, monthly snapshot",
      "Client / depository", "Not yet supplied in usable form",
@@ -222,8 +256,9 @@ SOURCES = [
      "Three entities named. Not derivable from the register; must be maintained by the client, with the basis for each stated."],
     ["S5", "Board-member list", "Client-maintained", "Not supplied",
      "Not derivable from the register. Directors holding through vehicles will not name-match, and family holdings are attributed under disclosure rules but not linked in the data."],
-    ["S6", "Exchange disclosures and press coverage", "Public", "Exchange feed; news aggregator",
-     "Usable. Press aggregator terms to be checked for commercial use."],
+    ["S6", "Exchange disclosures and press coverage", "Public",
+     "API first: exchange disclosure API and a licensed news API. Fallback: the public news feed in use today",
+     "Usable. Aggregator terms to be checked for commercial use before the fallback is relied on."],
     ["S7", "Language model for question answering", "Third-party API", "Commercial API",
      "Provider must be agreed against the residency position in section 6 before any real register data reaches it."],
 ]
@@ -276,6 +311,14 @@ RULES = [
      "Rescaling the named holders to 100% silently restates every figure."],
     ["R9", "IF asked about the provenance or reality of the data THEN answer plainly and immediately.",
      "Volunteering it in every answer is noise; denying it under direct questioning is the failure that loses the room."],
+    ["R10", "IF a source offers an official API THEN use it; fall back to scraping only where no API exists, and record why.",
+     "A scraper breaks silently when a page changes and carries no licence. An API is versioned, supported and contractual."],
+    ["R11", "IF a source silently drops from its API to the fallback path THEN raise it as an operational alert, not a log line.",
+     "An undetected fallback means the system is quietly running on an unlicensed, unsupported path."],
+    ["R12", "IF a capability is not explicitly granted to a role THEN it is denied to that role.",
+     "Deny by default. An omission in the matrix must fail closed."],
+    ["R13", "IF a user without register access asks a question that would be answered from register data THEN decline and say why.",
+     "Access control that the assistant can talk around is not access control."],
 ]
 
 NEVER = [
@@ -285,7 +328,11 @@ NEVER = [
     ["N3", "Execute, instruct or recommend a trade, or offer investment advice."],
     ["N4", "Transmit register data to any third party not covered by the agreed residency and processing position."],
     ["N5", "Overwrite or delete a captured market tick. The archive is append-only; the exchange publishes no intraday history and a lost tick is unrecoverable."],
-    ["N6", "Make register data reachable without authentication."],
+    ["N6", "Make register data reachable without authentication, or by any role other than Executive."],
+    ["N8", "Store register holder identifiers or names unencrypted at rest, or carry them over an unencrypted connection."],
+    ["N9", "Authenticate through a shared or generic account. Every action must attribute to a named person."],
+    ["N10", "Return register data through the assistant, an export, a log or an error message to a caller whose role does not carry register access."],
+    ["N11", "Scrape a source that offers a usable API, or rely on a fallback path without recording that it was used."],
     ["N7", "Report a statistical finding as an established fact about a named party's intent."],
 ]
 
@@ -317,6 +364,10 @@ CONSTRAINTS = [
     ["C-7", "ASSUMPTION. Hosting, residency and the acceptable language-model provider will be agreed by the client before any real register data is loaded."],
     ["C-8", "CONSTRAINT. Directors holding through corporate vehicles, and family holdings attributed under disclosure rules, will not be identified by name matching. Coverage of the board cut is therefore incomplete by construction."],
     ["C-9", "ASSUMPTION. The prototype's analysis logic is reusable. The register analysis is written to be source-independent and is exercised by an automated suite; the ingestion layer is not reusable and is expected to be rebuilt."],
+    ["C-10", "CONSTRAINT. Access control is not retrofittable in the prototype - it has none at all, and the register is reachable by anyone holding the URL. FR-29 to FR-36 are foundational and must be built before any real register data is loaded, not added at the end."],
+    ["C-11", "ASSUMPTION. The client operates an identity provider supporting single sign-on, and will federate this application with it. If not, the authentication approach must be agreed before FR-29 can be estimated."],
+    ["C-12", "CONSTRAINT. Encryption at rest and field-level encryption of holder identity require a managed key store and a key-rotation owner on the client side. Both are client decisions and neither is a code change."],
+    ["C-13", "RISK. An API-first policy is only as good as the APIs available. Where no API exists the fallback is a scraper, which breaks silently when a page changes and carries no licence. Every fallback in section 7 is technical debt with a named reason and should carry a date for review."],
 ]
 
 OUT_OF_SCOPE = [
