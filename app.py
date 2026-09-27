@@ -28,6 +28,7 @@ import pandas as pd
 import streamlit as st
 
 from qse import Client, NotAvailable, archive, build, index_series, render
+from qse.client import Unreachable
 from qse.period import KINDS, resolve
 
 import assistant
@@ -2307,8 +2308,6 @@ def safe(render, label: str) -> None:
     unreachable. Only the market and news tabs touch the network; catching here
     keeps the offline tabs usable.
     """
-    from qse.client import Unreachable
-
     try:
         render()
     except Unreachable as exc:
