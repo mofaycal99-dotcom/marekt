@@ -366,6 +366,24 @@ comparison PDFs here hold June against July 2026 — **one delta**, on which eve
 returns nothing at all. Two snapshots support a difference; twenty-four support a finding. It is the same
 argument the tick archive makes one timescale down.
 
+## The demonstration band
+
+A red band sits above the tabs and stays pinned to the top of the window while the page
+scrolls, so a screenshot taken halfway down the register still carries it.
+
+Its wording is scoped on purpose. **"This data is simulated" as a blanket statement would
+be false on three of the five tabs** — the market and news data is live from qe.com.qa —
+and a disclaimer that is wrong where the reader can check it is worse than none, because
+it teaches them to skip the part that is right. The band therefore names the Register and
+Register scan tabs specifically, and states the production position on encryption, privacy
+certification and access.
+
+Making it stick needed one Streamlit-specific fix worth knowing. Every element is wrapped
+in its own container, and the band's wrapper is 32px tall — shorter than the band — so a
+`position: sticky` band had no range to stick within and scrolled away with its wrapper.
+Collapsing the two wrappers with `display: contents` makes the page-height vertical block
+the containing element, which is what sticky needs.
+
 ## Deploying it
 
 The app runs anywhere with Python and two packages. What decides the host is not

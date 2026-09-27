@@ -2296,6 +2296,51 @@ def concentration_of(rows: list[dict]) -> float:
     return 100 * sum(shares[:10]) / sum(shares)
 
 
+# --------------------------------------------------------------- demo notice
+# A standing band, above the tabs so it is on screen whichever one is open, and
+# sticky so it survives a long scroll through the register rather than leaving
+# the page at the first swipe.
+#
+# The wording is scoped deliberately. "This data is simulated" as a blanket
+# statement would be false on three of the five tabs — the market and news data
+# is genuinely live from qe.com.qa — and a disclaimer that is wrong where the
+# reader can check it is worse than none, because it teaches them to skip the
+# part that is right.
+
+st.html(
+    """
+    <style>
+      /* Streamlit wraps every element in its own container, and this one is
+         32px tall — shorter than the band itself, so a sticky band had no range
+         to stick within and scrolled away with its wrapper. Collapsing the two
+         wrappers makes the page-height vertical block the containing element,
+         which is what sticky needs to span the whole scroll. */
+      [data-testid="stElementContainer"]:has(> .stHtml > .demo-band),
+      .stHtml:has(> .demo-band){display:contents}
+      .demo-band{position:sticky;top:0;z-index:999;
+                 margin:-2.3rem -1.4rem .9rem;
+                 /* left padding clears the sidebar-collapse control, which sits
+                    above this band and otherwise lands on the first words */
+                 padding:.48rem 1.4rem .52rem 3rem;
+                 background:#B00020;color:#fff;border-bottom:2px solid #7A0016;
+                 font-size:.76rem;line-height:1.5}
+      .demo-band b{letter-spacing:.07em}
+      .demo-band .sep{opacity:.55;padding:0 .45rem}
+      @media (max-width: 900px){ .demo-band{font-size:.7rem} }
+    </style>
+    <div class="demo-band">
+      <b>DEMONSTRATION ONLY — NOT FOR DISTRIBUTION</b>
+      <span class="sep">|</span>
+      The shareholder register and every holder named on the Register and
+      Register scan tabs are <b>simulated</b>. No figure on those tabs describes
+      a real shareholder.
+      <span class="sep">|</span>
+      In production, register data will be encrypted in transit and at rest,
+      privacy-certified, and reachable only by named authorised users.
+    </div>
+    """
+)
+
 tab_market, tab_social, tab_book, tab_register, tab_chat = st.tabs(
     ["Market dashboard", "News listening", "Register", "Register scan", "Ask the data"]
 )
