@@ -20,7 +20,10 @@ from datetime import date
 from pathlib import Path
 from pathlib import Path as _Path
 
-from qse import Client, NotAvailable, archive, build_period, render
+from qse import archive
+from qse.build import build_period
+from qse.client import Client, NotAvailable
+from qse.render import render
 from qse.period import Period, month_weeks
 
 DAY, PREV, BEFORE, YEAR_AGO = "2026-08-13", "2026-08-12", "2026-08-11", "2025-08-13"

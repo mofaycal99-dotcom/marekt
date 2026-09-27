@@ -24,8 +24,10 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import URLError
 
-from qse import Client, NotAvailable, build, index_series, render
 from qse import archive as archive_mod
+from qse.build import build, index_series
+from qse.client import Client, NotAvailable
+from qse.render import render
 from qse.fetch import fetch_company, fetch_live, fetch_period
 from qse.period import KINDS, resolve
 

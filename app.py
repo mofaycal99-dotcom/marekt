@@ -27,9 +27,11 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-from qse import Client, NotAvailable, archive, build, index_series, render
-from qse.client import Unreachable
+from qse import archive
+from qse.build import build, index_series
+from qse.client import Client, NotAvailable, Unreachable
 from qse.period import KINDS, resolve
+from qse.render import render
 
 import assistant
 import listening

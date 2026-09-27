@@ -406,3 +406,211 @@ APPENDIX = [
     ["Automated tests", "154 checks, no network", "Yes",
      "Covers reconciliation of every cut and segment, period aggregation, and the detector behaviour. Extend rather than replace."],
 ]
+
+
+# ==================================================================== screens
+# The dev team is rebuilding something that already exists and runs. This is the
+# inventory of it, screen by screen and panel by panel, so nothing has to be
+# reverse-engineered out of the prototype.
+
+SCREENS = [
+    ("Screen 1 - Market dashboard", "Live, from the exchange. One screen, no scrolling by design.", [
+        ["Panel", "Contents"],
+        ["Ticker bar", "Biggest absolute movers market-wide, scrolling; symbol, last, change %"],
+        ["Selector row", "Company picker, range (1M / 3M / Max), period (Daily / Weekly / Monthly), export popover"],
+        ["Price and volume chart", "Daily closes as a line above, volume as columns below, one shared x-axis. Not a dual axis - a second y-scale invites a price/volume relationship to be read out of the scales"],
+        ["Share statistics", "~20 figures: OHLC, previous close, change and change %, 1-year change, 52-week high/low, volume, value, share count, market cap, price-to-book, dividend yield, cap rank to market and to sector"],
+        ["Index statistics", "~14 figures for the QE Index over the same period"],
+        ["Share vs index vs sector", "Percentage change of the three side by side"],
+        ["Sector indices", "All seven sector index moves for the period"],
+        ["Ownership by nationality", "Qatari / GCC / Arab / Foreign, current against prior reading. Logarithmic axis, as the source publishes it, with the caption stating that bar heights are therefore not proportional"],
+        ["Institutions share", "Institutions vs individuals as a tile with a percentage-point delta. The source's own line chart is not reproduced: its axis spans 29.383-29.405%, turning a 0.02pp move into a cliff"],
+        ["Market breadth", "Top five gainers, losers, by value and by volume - four tables"],
+        ["Shareholder activity", "Buy and sell, value and volume, by nationality x investor type, pivoted to one row per nationality"],
+        ["Insider trades", "Insider dealings for the period, market-wide"],
+        ["Export", "Bundle JSON, three CSVs and a self-contained printable HTML, in a popover so they cost no vertical space"],
+    ]),
+    ("Screen 2 - News listening", "Exchange disclosures and press coverage. No social media - see X-6.", [
+        ["Panel", "Contents"],
+        ["Priority coverage", "Articles naming the selected company or its divisions, with date, outlet, headline and a working link to the source"],
+        ["Whole market", "Market-wide coverage over a rolling window, filterable"],
+        ["Sentiment split", "Positive / negative / neutral as a donut. Sentiment is a transparent keyword rule, labelled as a stand-in for a licensed listening platform, never as measurement"],
+        ["Most-mentioned companies", "Ranked by article count, with share of coverage"],
+        ["Article table", "Date, time, outlet, company attribution, sentiment, headline, link"],
+    ]),
+    ("Screen 3 - Register (book of record)", "The reporting half. Ten numbered sections, all visible; no drill-downs.", [
+        ["Section", "Contents"],
+        ["Month selectors", "The month to report, and any earlier month to compare it against"],
+        ["1 Executive snapshot", "Six headline tiles, then an 18-KPI table with each KPI against 1, 3 and 12 months. Red marks movement in the direction that KPI is monitored for, which is not the same as down"],
+        ["2 Top 200 holders", "Sortable comparison table: holder, nationality, type, class, related and board flags, shares and % for both months, delta, status. Closes on the two total lines"],
+        ["3 / 3b Local vs international, by region", "Table, pie for the selected month, and a month-over-month line. Four regional buckets"],
+        ["4 / 4b By class (P/A), by investor type", "Same three-part treatment"],
+        ["5 Related parties", "The three named in the client's own file, with holdings and movement"],
+        ["6 Board members", "Directors on the register, holdings and movement"],
+        ["7 Holdings above 500K", "The cut the client's PDF publishes, reproduced with its two total lines"],
+        ["8 Who entered and who left", "Four tables: entered, left, added most, trimmed most"],
+        ["9 Month over month", "24 months x 16 columns - holders, in, out, dealt, concentration, float, splits, HHI - newest first, with a metric picker plotting any column"],
+        ["10 What to watch", "Severity-ranked cards, each with the rule that fired it, the figure that tripped it, and a recommended action"],
+        ["Export", "Full comparison, the KPI set and the trend, as CSV for the board pack"],
+    ]),
+    ("Screen 4 - Register scan (pattern detection)", "The discovery half. Eight numbered sections.", [
+        ["Section", "Contents"],
+        ["1 Executive snapshot", "Holders scanned and how many were excluded and why, findings and how many are high severity, holders flagged, float under a finding, holders moving in pairs, largest flagged holding"],
+        ["2 Holder archetypes", "Every scanned holder classified into exactly one archetype, as cards: count, share of float, average move, and what the label means"],
+        ["3 Who grew, who shrank, who trades", "Two ranked bar charts - change in holding over the window, and typical monthly movement. Blue is a holder the scan reported, grey is one it did not"],
+        ["4 What the scan found", "Finding cards filtered by type, beside a trajectory chart plotting the holders behind the selected finding over the full panel, with adverse disclosures marked"],
+        ["5 What the flagged holders did in a month", "Month picker, then each flagged holder's shares before and after, delta and share of the company"],
+        ["6 What to watch", "Every finding as a severity-ranked card with a recommended action"],
+        ["7 Was the scan right?", "Planted behaviour against recovered, for the demonstration panel only. Not part of the scan"],
+        ["8 Register snapshot", "The raw register for any month on the panel"],
+    ]),
+    ("Screen 5 - Ask the data", "Natural-language questions over whatever is currently rendered.", [
+        ["Panel", "Contents"],
+        ["Identity", "Branded as the company under analysis, not as the model behind it"],
+        ["Suggestion chips", "Seven starting questions covering share performance, market movers, valuation, ownership, news, price history and the register"],
+        ["Conversation", "Streamed answers, tables where the answer is a comparison"],
+        ["Input", "Text, plus voice typing through the browser's own speech recognition - no audio leaves the page, and the transcript lands in the input rather than being sent, so a misheard ticker can be corrected"],
+        ["Language", "English, French and Arabic dictation; right-to-left layout detected per turn"],
+    ]),
+]
+
+
+# ============================================================== user stories
+# Written as the dev team will work from them. Acceptance criteria are stated as
+# conditions a test can assert, not as adjectives.
+
+STORIES = [
+    ["ID", "Story", "Acceptance criteria"],
+    ["US-1", "As an IR analyst, I want the share update built automatically from the exchange, so that I stop transcribing figures by hand.",
+     "Every field on the circulated PDF is present and reconciles to the exchange's own published file for the period. Any figure that does not reconcile is listed with the discrepancy."],
+    ["US-2", "As an IR analyst, I want daily, weekly and monthly views, so that I can answer a question at the resolution it was asked.",
+     "Each period's figures come from that period's published file, not re-derived from daily data. A period with nothing published does not appear in the selector."],
+    ["US-3", "As a treasury analyst, I want intraday price history for the current session, so that I can see how the day developed.",
+     "Points accumulate from the captured archive. Where fewer than six ticks exist for the session, the view is not offered - no placeholder panel."],
+    ["US-4", "As the CFO, I want a one-page snapshot of the register, so that I can open the board pack and know the position in thirty seconds.",
+     "Six headline tiles plus every KPI against 1, 3 and 12 months. Each KPI names the direction it is monitored for."],
+    ["US-5", "As an IR manager, I want the register compared against any earlier month, so that I can explain a change over a quarter rather than only a month.",
+     "Any two months on the panel can be compared. Holders present in one and not the other are reported as entered or left, never as a change from zero."],
+    ["US-6", "As an IR manager, I want to know who entered and who left, so that I can brief on the shape of the base and not just its size.",
+     "Every holder in either month appears with a status of entered, left, dealt or unchanged. The four counts sum to the union of the two months."],
+    ["US-7", "As an IR analyst, I want the cuts my workbook already publishes, so that the output is recognisable without retraining.",
+     "Above 500K, companies and funds, individuals, related parties, board members, top 200 and full list. Each closes on a total and a total excluding related parties."],
+    ["US-8", "As the CFO, I want the book split by nationality, region, class and investor type, so that I can see where ownership is moving.",
+     "Each split reconciles to the month's snapshot. Any residual below the reporting floor is shown as its own share, never absorbed by rescaling."],
+    ["US-9", "As a compliance officer, I want holders approaching the disclosure threshold flagged, so that a crossing is never a surprise.",
+     "A crossing in either direction is high severity. An approach from below is reported. A holder steadily above the threshold without material movement is not re-reported each cycle."],
+    ["US-10", "As a compliance officer, I want related-party and director dealings surfaced, so that I can check them against the closed-period calendar.",
+     "Any movement by a flagged holder is reported, however small, with the figure."],
+    ["US-11", "As the CFO, I want every flagged item to carry what to do about it, so that the report ends in a decision rather than an observation.",
+     "Each watch item carries a severity, the rule that fired it, the figure that tripped it, and a recommended action."],
+    ["US-12", "As a data scientist, I want holders that move together identified, so that a stake being built across several names is visible.",
+     "Pairs beyond the correlation floor are reported with their coefficient and window. Pairs explained by a common driver are distinguished from pairs that are not."],
+    ["US-13", "As a compliance officer, I want holders that reduced ahead of adverse disclosures identified, so that I can route it to the right place.",
+     "Reported with the pre-event and other-period means, and the count of events. High severity, routed to compliance."],
+    ["US-14", "As an IR manager, I want every holder described, not only the flagged ones, so that I understand the base rather than a list of oddities.",
+     "Every scanned holder carries exactly one archetype. The archetype counts sum to the number scanned, and the float shares sum to 100%."],
+    ["US-15", "As a sceptical reviewer, I want to know what the scan could not look at, so that I can judge what its silence means.",
+     "The count of holders excluded from the scan, and the reason, is reported alongside the findings."],
+    ["US-16", "As any user, I want to ask a question in plain language, so that I do not have to find the panel that holds the answer.",
+     "Answers quote only figures present in the current render. A figure not present is reported as absent, never estimated."],
+    ["US-17", "As a security officer, I want register access restricted and recorded, so that I can answer who saw what.",
+     "Only the Executive role reaches the Register and Register scan capabilities, by any route including the assistant and exports. Every access writes a tamper-evident audit entry."],
+    ["US-18", "As an operator, I want a source outage to fail fast and loudly, so that one feed cannot take the application down.",
+     "An unreachable source fails within seconds, is reported on the affected capability only, and every other capability renders normally."],
+]
+
+
+# ==================================================== data science workstream
+
+DS_INTRO = (
+    "The Register scan is not feature work and should not be estimated as such. "
+    "It is a data-science workstream with its own method, its own validation and "
+    "its own failure modes, and it is the part of this system most likely to be "
+    "wrong in a way that is invisible until someone checks. The prototype "
+    "carries a working implementation of everything below; what it does not "
+    "carry is the validation a production deployment needs on a real book."
+)
+
+DS_WORK = [
+    ["Stage", "What it involves", "Why it is not trivial"],
+    ["Panel construction",
+     "Assemble a rectangle of holder x month from monthly snapshots. Exclude holders not present throughout, and report how many were excluded.",
+     "Filling absent months with zeros invents a run of 'did nothing', which then correlates with every other holder that also did nothing. The exclusion costs recall on newcomers and is the only honest option."],
+    ["Common-factor removal",
+     "Subtract the cross-sectional median move from every holder, every month.",
+     "A register is zero-sum in percentage terms: when one cohort adds, every other holder's share falls even if they never traded. Without this step any two passive holders correlate above 0.99, and a real pattern appears inverted in everyone else - the detector finds the reflection as readily as the cause."],
+    ["Feature engineering",
+     "Per holder: idiosyncratic volatility, drift across the window, monotonicity, correlation to the price series, pairwise correlation and net offset.",
+     "Each feature has to survive a book with a different liquidity profile. Features calibrated on one issuer do not transfer."],
+    ["Detector design and calibration",
+     "Five detectors, each with a threshold. Thresholds derived from the book being analysed rather than fixed.",
+     "A thinly held register and a liquid one differ by an order of magnitude in monthly variance. A constant tuned on one classifies the whole of the other."],
+    ["Precedence and labelling",
+     "Resolve holders that satisfy several detectors into one reading, by specificity.",
+     "A cohort sharing a driver correlates pairwise as a side effect. Labelling those pairs 'coordinated' reports one mechanism twice and names it wrongly the second time."],
+    ["Validation",
+     "A generated panel with known behaviours planted, scored for recall AND precision. A null panel with nothing planted, which must return nothing.",
+     "Recall alone is meaningless - a detector that flags everything recovers everything. The null panel is the only evidence the scan is not pattern-matching noise, and it is the thing a quantitative reviewer will ask for first."],
+    ["False-positive management",
+     "Track items raised that required no action; tune thresholds against that rate each cycle.",
+     "A watchlist that cries wolf is switched off within two cycles, and switching it off is indistinguishable from it working."],
+    ["Presentation",
+     "Render findings so a finance reader can act on them without a statistician present.",
+     "The prototype's first two attempts at this failed in review. A chart that needs a walkthrough is treated as a chart that is hiding something."],
+]
+
+DS_EFFORT = (
+    "Skills required: a data scientist for the detector and validation work, not "
+    "a backend engineer following a specification. Expect iteration against a "
+    "real book once one is available - thresholds that hold on a generated panel "
+    "are a starting point, not an answer. Budget explicitly for the null-panel "
+    "and false-positive work; it produces no visible feature and is the reason "
+    "anyone will believe the output."
+)
+
+
+# ==================================================== the assistant harness
+
+ASSISTANT_INTRO = (
+    "The assistant is a grounding harness around a language model, not a model "
+    "integration. Almost all of the engineering is in what reaches the model and "
+    "what it is allowed to do with it. The model itself is replaceable and should "
+    "be treated as such - see S7 and C-7."
+)
+
+ASSISTANT = [
+    ["Capability", "What it does", "Requirement"],
+    ["Briefing construction",
+     "Every figure currently rendered - live market, period statistics, breadth, ownership, activity, insider trades, the register book of record, the scan findings and archetypes, the news window - is serialised to a compact structured briefing on each render.",
+     "Deterministic: the same state must produce the same briefing. It is a pure function of the render, and testable as one."],
+    ["Grounding",
+     "The model answers only from the briefing. A figure not in it is reported as absent.",
+     "Never estimate, never fill a gap from memory. A wrong figure here is worse than no figure."],
+    ["Scoping by role",
+     "The briefing is assembled for the caller. A user without register access gets a briefing with no register in it.",
+     "Access control the assistant can be talked around is not access control - FR-32, N10."],
+    ["Source separation",
+     "Datasets that share a name are introduced distinctly, each stating what it is and what it is not.",
+     "The exchange's ownership split and the per-holder register were both called 'the register' and the model answered a question about one using the other. Each section now cross-references the other."],
+    ["Provenance handling",
+     "Demonstration provenance is stated when asked and not volunteered otherwise.",
+     "Volunteering it in every answer buries the finding; denying it under direct questioning is the failure that loses the room - R9, N2."],
+    ["Caveat propagation",
+     "Where a figure carries a caveat in the briefing - an approximation, a single-session period, a keyword-derived sentiment - the caveat travels with the answer.",
+     "A number quoted without its caveat is a different number."],
+    ["Cost control",
+     "The briefing is placed first and does not change within a conversation, so provider-side context caching applies from the second turn onward.",
+     "A deterministic token budget is a non-functional requirement, not an optimisation."],
+    ["Conversation scope",
+     "A bounded number of prior turns is resent; the briefing carries the facts.",
+     "No memory across sessions. No retrieval outside the briefing."],
+    ["Refusal behaviour",
+     "Declines investment advice, recommendations and anything outside the rendered state.",
+     "N3. The system describes what the data shows."],
+    ["Language",
+     "Answers in the language asked. Right-to-left layout detected per turn.",
+     "Arabic must render correctly, not merely be accepted."],
+    ["Voice input",
+     "Browser-native speech recognition; the transcript lands in the input for correction before sending.",
+     "No audio leaves the page. A misheard ticker must be correctable before it becomes a question."],
+]
