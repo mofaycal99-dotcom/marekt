@@ -1,0 +1,17 @@
+.env
+.streamlit/secrets.toml
+*.pdf
+out/archive/
+out/raw/
+out/.cache/
+out/*.json
+out/*.html
+qe_data/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.git/
+.claude/
+.agents/

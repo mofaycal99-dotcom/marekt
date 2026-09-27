@@ -1,0 +1,7 @@
+# The app
+streamlit>=1.61          # brings pandas and altair with it
+
+# Optional: only used to downscale oversized company logos for the HTML export.
+pillow>=10
+
+# The CLI (qse.py) needs none of these — standard library only.

@@ -1,0 +1,5311 @@
+{
+ "meta": {
+  "symbol": "IGRD",
+  "name": "Estithmar Holding",
+  "nameAr": "استثمار القابضة",
+  "sector": "Industrials",
+  "sectorIndexCode": "QIND",
+  "currency": "QAR",
+  "market": "Qatar",
+  "builtAt": "2026-08-17T12:09:27+03:00",
+  "refreshSeconds": 1800,
+  "defaultKind": "daily",
+  "unavailable": {},
+  "logo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCABAAGYDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAYIAwUJBwL/xAAyEAABAwQBAgQFAgYDAAAAAAABAgMEAAUGERIHIQgTIjEUFUFRYRaRIyQyQoGiM1LT/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAEEAv/EAB0RAQADAQACAwAAAAAAAAAAAAABAxExBDICQfH/2gAMAwEAAhEDEQA/AL/UpSgUpSgUpSgUpSgUpSgUpSgUpSg1X6is6cx/Sy5qEXUxBNTGV2K2iop5J++inuB7bH3r5yjKLFhmIT8oya4JgWmA35smUpClhtOwN6SCT3I9hVavEUjI1+JHFE4iJRvny5Hwfwv/ACBfnu9x9Na3vfbW99t1OvEaLyPAtmAyAxVXX5Mn4oxAQ0XObfLhvvrda7/GiqquyJ9o59/jLR5E2WfOuY9Z6yq8Xfh2SkqPUqKABs/yMr/yr2hiQzKitSWF82nUBaFAHukjYNcmcDWlOGRw7O6GtN+a5zRlsbncOPM75nyz21vj39tVMutt0y+D14ym+XXJr1dcbjSwxbJGKZKiP8qbISWW/JBPBQSUgpUlOzs8+9Yta8dCZ3VLALb1Oi9O5uTw2cnlpSpi1qC/NcCkqUCPTruEKPv9KjsHxCdM5vUHJ8P+ZzY87GY8mVdHZMF1thhqOoJdX5mtKA5D29xVA8+t9ju/iyx+fI6kX+yWLI7ZBuyMjub5Eu2svRVceTnL3BRonYG1qrfzWr3k3V7r1jpzS+Kt1ux+dNjqTKcWh5MZ2MsJ4FWglxIIVr6LPvTReK5dfultv6RPdTGcj+Y401MTAVMt7Dj38YqCePHQPuob7fWpniWVWjNsIteWWFx1y23OOmVGW62W1KQr22k9wfxXLGxW+1Dwb5Vc285kP3Zy4RWHMVLu24zQltFMwI32Kj6eWvxupJjrmd9Ouo3Qm9ReoF4lNZDGgOog+atDESMqUlkxeHLitHBX2Hck++jTTHUPY/P7U2K5RQ05/k3TTqtkiup2TR4eLzYzptpnPrTLLstxlO1eZtHAbI1sE/TsDWwnXnqjj8Xo/wBU3uqeRXG4ZE4tDTD0hwJiNxpaI4bPq4uJWk+rae+zvZO6umOpux+f2psVzG6t5eMqzLqBm2C5P1Ib+TXVA+KkX9qPFY8x4tBDEbkHikqQsp4E8QBySBWG9Zv1gzzqj0qjWPNrtEyG+47BY85M5xllT6npTSn3EpPHlwRyUeJOxsDeqaY6gUqJ9McZu2G9Icexe+3X5rcrdCRHkzuS1eese69r9R3+e9KqN18gtJyw5KqE2q6fCiEJKu6ktBRXwT9gSok699DfsKi/WKTj0XorfF5Xj5v1mWhpqVbQpSTIQt5tGhx7k7UCAO5I0Pep1WN9hiSwWZDLbrZ0ShxIUDo7HY/kA1ZmZ6kREcVJt+DeFWZNtcCX0cMSRdJz8JtC1PJLQRPVBQp1K3ULBW6kbQlKlN72vikcq190tXhtyG6WW73DolAcvFwtpukoolllhkfAyZaUqCFgvqUmIQVeXx9XdRV6Tb5Vota5UeSu2xFPRlrdYcLKSppa/wCtSTraSrZ2R7/WsRsNjMlqQbPALrTJjtufDo5IbO9oB1sJ7nsO3c/eucVXXM1eHjOriGs26YSJkmwW1pthxlsMNFr+UHw7a0PI9CDPj780JQkLUdgBRqT2m29ErF0/vXXax4M1HcukF5iUXgVOS0KdDRYWkLW3xWttCdjadaO9br1+44zYLrbZMCfaYjseU2Wnk+WElaDx2CU6OjwR9f7R9hX3AsFkteMtY7b7VEj2lpn4dEJDQ8oN/VPH2IOzvfvs7oPBMT6W+FO44IJ0LHMYhRb/ABY8iTDeuqtpAKXUtkKd2jivXYAdx7fStNdr74YTco7T+JsS3cGa+HsJQpw81R3tluOeelBDgbPMkj1b9kmrCHAMGUoqVhuPknuSbaz3/wBa+msGw1iWxKj4tZ2H2F+Y04zDbbUk8VI90gf2rUNe3eqKytZB4arbAynGLV07iyIN9usS33GPFmki4epxxLx5LHoQ+26naCe4B9lDc1j434bshuiMEuGMWmJDwZam7cLhLVHS045Jd80NBTgUoByPsqOwdjVe1xcPxOC/58LGbNGd1rmzCaQrWwdbCfwP2FYlYPhq2+DuLWd4eY69/GhtuHm64XHFbUCdqWpSj9yag8AzjEPCNb82alXjE8euV3yaQoLejyebTa1OthTrhS7xYBcdb2pIBPJR0RyrSY1kPhmsysXyi749jsC7WiNFZtMi2S3pBZ2ymToIUQUgGWdBXI7UoE7SQLMjBcKSkpTiFhAPcgW9nv8A6/k1lRh2JNr5oxizJVvfIQWgd73/ANfuSaDDg2Vx836f2zKosRyKxPbLqGXVBSkgKUkbI7b9O/8ANK3zTTbLQaZbS2hPslIAA/wKVR90pSgUpSgUpSgUpSgUpSgUpSgUpSg//9k=",
+  "source": "qe.com.qa static feeds — see API_REFERENCE.md"
+ },
+ "live": {
+  "state": "Open",
+  "lastUpdate": "17/08/2026 - 12:07:03",
+  "indexValue": 9933.89,
+  "changeValue": -111.29,
+  "changePct": -1.11,
+  "volume": 106672727.0,
+  "tradedValue": 264036454.476,
+  "trades": 20337.0,
+  "ytdPct": -7.7,
+  "quote": {
+   "symbol": "IGRD",
+   "lastPrice": 4.26,
+   "changeValue": 0.0,
+   "changePct": 0.0,
+   "volume": 0.0,
+   "high": 0.0,
+   "low": 0.0
+  }
+ },
+ "periods": {
+  "daily": {
+   "period": {
+    "kind": "daily",
+    "tab": "Daily",
+    "label": "13 August 2026",
+    "path": "2026/08/13",
+    "start": "2026-08-13",
+    "end": "2026-08-13",
+    "sessions": 1
+   },
+   "share": {
+    "open": 4.36,
+    "high": 4.42,
+    "low": 4.298,
+    "close": 4.33,
+    "previousClose": 4.445,
+    "changeValue": -0.115,
+    "changePct": -2.587,
+    "volume": 6366286,
+    "value": 27647060.943,
+    "trades": 744,
+    "high52": 4.445,
+    "low52": 3.435,
+    "oneYearChangePct": 3.564,
+    "oneYearAgo": {
+     "date": "2025-08-13",
+     "close": 4.181
+    },
+    "priceToBook": 3.718,
+    "bookValuePerShare": 1.1646,
+    "priceToBookIsApproximate": true,
+    "dividendYieldPct": 0.0,
+    "cashDividend": 0.0,
+    "eps": 0.25,
+    "peRatio": 16.77,
+    "sharesOutstanding": 4493329500,
+    "marketCap": 19456116735.0,
+    "capRankMarket": 7,
+    "capRankMarketOf": 54,
+    "capRankSector": 2,
+    "capRankSectorOf": 10
+   },
+   "index": {
+    "name": "QE Index",
+    "indexValue": 10020.84,
+    "changeValue": -34.76,
+    "changePct": -0.35,
+    "volume": 238373136,
+    "tradedValue": 741474285.813,
+    "trades": 23622,
+    "mainVolume": 238081594,
+    "mainValue": 740865670.71,
+    "ventureVolume": 291542,
+    "ventureValue": 608615.103,
+    "tradedStocks": 52,
+    "gainers": 24,
+    "losers": 26,
+    "marketCap": 601340435012.114,
+    "high52": 11648.81,
+    "low52": 9920.69,
+    "pctFromHigh52": -13.98,
+    "pctFromLow52": 1.01,
+    "window": {
+     "weeks": 52,
+     "sessions": 247,
+     "basis": "daily closes from MarketSummary.INDEX_VALUE"
+    }
+   },
+   "comparison": [
+    {
+     "label": "Estithmar Holding Share",
+     "changePct": -2.587
+    },
+    {
+     "label": "QE Index",
+     "changePct": -0.35
+    },
+    {
+     "label": "Industrials Index",
+     "changePct": -1.58
+    }
+   ],
+   "sectorIndices": [
+    {
+     "code": "QBNK",
+     "name": "Banks&Financial Services",
+     "value": 5059.44,
+     "changeValue": -7.82,
+     "changePct": -0.15
+    },
+    {
+     "code": "QCON",
+     "name": "Consumer Goods&Services",
+     "value": 7897.93,
+     "changeValue": -19.67,
+     "changePct": -0.25
+    },
+    {
+     "code": "QIND",
+     "name": "Industrials",
+     "value": 3837.52,
+     "changeValue": -61.72,
+     "changePct": -1.58
+    },
+    {
+     "code": "QINS",
+     "name": "Insurance",
+     "value": 2743.57,
+     "changeValue": -19.68,
+     "changePct": -0.71
+    },
+    {
+     "code": "QREA",
+     "name": "Real Estate",
+     "value": 1395.84,
+     "changeValue": 5.52,
+     "changePct": 0.4
+    },
+    {
+     "code": "QTLC",
+     "name": "Telecoms",
+     "value": 2408.68,
+     "changeValue": 5.83,
+     "changePct": 0.24
+    },
+    {
+     "code": "QTRN",
+     "name": "Transportation",
+     "value": 5370.36,
+     "changeValue": 9.62,
+     "changePct": 0.18
+    }
+   ],
+   "allIndices": [
+    {
+     "code": "GNRI",
+     "name": "General Index",
+     "value": 10020.84,
+     "changeValue": -34.76,
+     "changePct": -0.35
+    },
+    {
+     "code": "QETR",
+     "name": "QE Total Return Index",
+     "value": 24762.76,
+     "changeValue": -85.9,
+     "changePct": -0.35
+    },
+    {
+     "code": "QERP",
+     "name": "QE Al Rayan Islamic Index - Price",
+     "value": 2177.45,
+     "changeValue": -5.39,
+     "changePct": -0.25
+    },
+    {
+     "code": "QERI",
+     "name": "QE Al Rayan Islamic Index",
+     "value": 5033.85,
+     "changeValue": -12.46,
+     "changePct": -0.25
+    },
+    {
+     "code": "QEAS",
+     "name": "QE All Share Index",
+     "value": 3930.5,
+     "changeValue": -14.27,
+     "changePct": -0.36
+    },
+    {
+     "code": "QBNK",
+     "name": "All Share Banks&Financial Services Index",
+     "value": 5059.44,
+     "changeValue": -7.82,
+     "changePct": -0.15
+    },
+    {
+     "code": "QCON",
+     "name": "All Share Consumer Goods&Services Index",
+     "value": 7897.93,
+     "changeValue": -19.67,
+     "changePct": -0.25
+    },
+    {
+     "code": "QIND",
+     "name": "All Share Industrials Index",
+     "value": 3837.52,
+     "changeValue": -61.72,
+     "changePct": -1.58
+    },
+    {
+     "code": "QINS",
+     "name": "All Share Insurance Index",
+     "value": 2743.57,
+     "changeValue": -19.68,
+     "changePct": -0.71
+    },
+    {
+     "code": "QREA",
+     "name": "All Share Real Estate Index",
+     "value": 1395.84,
+     "changeValue": 5.52,
+     "changePct": 0.4
+    },
+    {
+     "code": "QTLC",
+     "name": "All Share Telecoms Index",
+     "value": 2408.68,
+     "changeValue": 5.83,
+     "changePct": 0.24
+    },
+    {
+     "code": "QTRN",
+     "name": "All Share Transportation Index",
+     "value": 5370.36,
+     "changeValue": 9.62,
+     "changePct": 0.18
+    }
+   ],
+   "topGainers": [
+    {
+     "symbol": "BEMA",
+     "name": "Beema",
+     "nameAr": "بيمه",
+     "close": 5.5,
+     "changePct": 3.774
+    },
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.317,
+     "changePct": 2.411
+    },
+    {
+     "symbol": "ZHCD",
+     "name": "Zad Holding Company",
+     "nameAr": "زاد",
+     "close": 12.88,
+     "changePct": 1.577
+    },
+    {
+     "symbol": "CBQK",
+     "name": "Comm. Bank of Qatar",
+     "nameAr": "التجاري",
+     "close": 4.189,
+     "changePct": 1.429
+    },
+    {
+     "symbol": "AHCS",
+     "name": "Aamal",
+     "nameAr": "أعمال",
+     "close": 0.726,
+     "changePct": 1.255
+    }
+   ],
+   "topLosers": [
+    {
+     "symbol": "IQCD",
+     "name": "Industries Qatar",
+     "nameAr": "صناعات قطر",
+     "close": 10.04,
+     "changePct": -2.995
+    },
+    {
+     "symbol": "IGRD",
+     "name": "Estithmar Holding",
+     "nameAr": "استثمار القابضة",
+     "close": 4.33,
+     "changePct": -2.587
+    },
+    {
+     "symbol": "QFLS",
+     "name": "Qatar Fuel",
+     "nameAr": "قطر للوقود",
+     "close": 13.3,
+     "changePct": -1.554
+    },
+    {
+     "symbol": "AKHI",
+     "name": "Alkhaleej Takaful",
+     "nameAr": "الخليج التكافلي",
+     "close": 2.88,
+     "changePct": -1.437
+    },
+    {
+     "symbol": "WDAM",
+     "name": "Widam",
+     "nameAr": "ودام",
+     "close": 1.45,
+     "changePct": -1.428
+    }
+   ],
+   "topByValue": [
+    {
+     "symbol": "IQCD",
+     "name": "Industries Qatar",
+     "nameAr": "صناعات قطر",
+     "close": 10.04,
+     "tradedValue": 100512872.387
+    },
+    {
+     "symbol": "QIBK",
+     "name": "Qatar Islamic Bank",
+     "nameAr": "المصرف",
+     "close": 22.42,
+     "tradedValue": 84472755.65
+    },
+    {
+     "symbol": "ORDS",
+     "name": "Ooredoo",
+     "nameAr": "Ooredoo",
+     "close": 13.08,
+     "tradedValue": 71872249.6
+    },
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.317,
+     "tradedValue": 58834719.28
+    },
+    {
+     "symbol": "MARK",
+     "name": "Rayan",
+     "nameAr": "الريان",
+     "close": 1.982,
+     "tradedValue": 53693667.717
+    }
+   ],
+   "topByVolume": [
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.317,
+     "tradedVolume": 44781237.0
+    },
+    {
+     "symbol": "MARK",
+     "name": "Rayan",
+     "nameAr": "الريان",
+     "close": 1.982,
+     "tradedVolume": 27144736.0
+    },
+    {
+     "symbol": "MPHC",
+     "name": "Mesaieed",
+     "nameAr": "مسيعيد",
+     "close": 1.083,
+     "tradedVolume": 24646752.0
+    },
+    {
+     "symbol": "QAMC",
+     "name": "QAMCO",
+     "nameAr": "قامكو",
+     "close": 1.532,
+     "tradedVolume": 18542672.0
+    },
+    {
+     "symbol": "BRES",
+     "name": "Barwa",
+     "nameAr": "بروة",
+     "close": 2.31,
+     "tradedVolume": 14051468.0
+    }
+   ],
+   "shareholderActivity": [
+    {
+     "nationality": "Qatari",
+     "code": "QTR",
+     "totalBuyPct": 31.5,
+     "totalSellPct": 75.983,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 50,
+       "tradedValue": 122832155.722,
+       "tradedVolume": 60216900,
+       "tradedValuePct": 16.58
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 52,
+       "tradedValue": 127748509.475,
+       "tradedVolume": 64982404,
+       "tradedValuePct": 17.243
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 42,
+       "tradedValue": 110534649.653,
+       "tradedVolume": 51592666,
+       "tradedValuePct": 14.92
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 36,
+       "tradedValue": 435182609.513,
+       "tradedVolume": 119457475,
+       "tradedValuePct": 58.74
+      }
+     ]
+    },
+    {
+     "nationality": "GCC",
+     "code": "GCC",
+     "totalBuyPct": 2.261,
+     "totalSellPct": 0.56,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 15,
+       "tradedValue": 1517570.026,
+       "tradedVolume": 614031,
+       "tradedValuePct": 0.205
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 13,
+       "tradedValue": 1638831.786,
+       "tradedVolume": 1036995,
+       "tradedValuePct": 0.221
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 9,
+       "tradedValue": 15228708.129,
+       "tradedVolume": 2115647,
+       "tradedValuePct": 2.056
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 8,
+       "tradedValue": 2514418.423,
+       "tradedVolume": 506724,
+       "tradedValuePct": 0.339
+      }
+     ]
+    },
+    {
+     "nationality": "Arab",
+     "code": "ARB",
+     "totalBuyPct": 5.471,
+     "totalSellPct": 5.028,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 47,
+       "tradedValue": 40310478.485,
+       "tradedVolume": 22710053,
+       "tradedValuePct": 5.441
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 51,
+       "tradedValue": 37138983.703,
+       "tradedVolume": 21116291,
+       "tradedValuePct": 5.013
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 1,
+       "tradedValue": 225225.0,
+       "tradedVolume": 22500,
+       "tradedValuePct": 0.03
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 1,
+       "tradedValue": 110699.93,
+       "tradedVolume": 85285,
+       "tradedValuePct": 0.015
+      }
+     ]
+    },
+    {
+     "nationality": "Foreigners",
+     "code": "FRN",
+     "totalBuyPct": 60.769,
+     "totalSellPct": 18.429,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 41,
+       "tradedValue": 7698359.546,
+       "tradedVolume": 3606953,
+       "tradedValuePct": 1.039
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 42,
+       "tradedValue": 7533153.474,
+       "tradedVolume": 4240679,
+       "tradedValuePct": 1.017
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 43,
+       "tradedValue": 442518524.149,
+       "tradedVolume": 97202844,
+       "tradedValuePct": 59.73
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 45,
+       "tradedValue": 128998464.406,
+       "tradedVolume": 26655741,
+       "tradedValuePct": 17.412
+      }
+     ]
+    }
+   ],
+   "ownership": {
+    "current": {
+     "byNationality": {
+      "GCC": 0.281,
+      "Arab": 0.778,
+      "Foreigners": 3.613,
+      "Qatari": 95.327
+     },
+     "institutionsPct": 29.383,
+     "individualsPct": 70.616,
+     "detail": [
+      {
+       "nationality": "GCC",
+       "investorType": "Individuals",
+       "holders": 25,
+       "shares": 1373239,
+       "pct": 0.031
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Institutions",
+       "holders": 14,
+       "shares": 11250762,
+       "pct": 0.25
+      },
+      {
+       "nationality": "Arab",
+       "investorType": "Individuals",
+       "holders": 263,
+       "shares": 34978213,
+       "pct": 0.778
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Institutions",
+       "holders": 145,
+       "shares": 138362146,
+       "pct": 3.079
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Individuals",
+       "holders": 184,
+       "shares": 24010570,
+       "pct": 0.534
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Institutions",
+       "holders": 70,
+       "shares": 1170708231,
+       "pct": 26.054
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Individuals",
+       "holders": 3807,
+       "shares": 3112646339,
+       "pct": 69.273
+      }
+     ]
+    },
+    "previous": {
+     "byNationality": {
+      "GCC": 0.279,
+      "Arab": 0.769,
+      "Foreigners": 3.636,
+      "Qatari": 95.314
+     },
+     "institutionsPct": 29.403,
+     "individualsPct": 70.595,
+     "detail": [
+      {
+       "nationality": "GCC",
+       "investorType": "Individuals",
+       "holders": 24,
+       "shares": 1323239,
+       "pct": 0.029
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Institutions",
+       "holders": 14,
+       "shares": 11250762,
+       "pct": 0.25
+      },
+      {
+       "nationality": "Arab",
+       "investorType": "Individuals",
+       "holders": 241,
+       "shares": 34543044,
+       "pct": 0.769
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Institutions",
+       "holders": 145,
+       "shares": 139395252,
+       "pct": 3.102
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Individuals",
+       "holders": 179,
+       "shares": 24008936,
+       "pct": 0.534
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Institutions",
+       "holders": 70,
+       "shares": 1170575122,
+       "pct": 26.051
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Individuals",
+       "holders": 3799,
+       "shares": 3112233145,
+       "pct": 69.263
+      }
+     ]
+    },
+    "currentDate": "2026-08-13",
+    "previousDate": "2026-08-12"
+   },
+   "insiderTrades": [
+    {
+     "symbol": "DUBK",
+     "company": "Dukhan Bank",
+     "insider": "شركة قطرالقابضة",
+     "buy": 0,
+     "sell": 3872340,
+     "sessions": 1
+    },
+    {
+     "symbol": "QEWS",
+     "company": "Nebras Energy",
+     "insider": "جهاز قطر للإستثمار حكومة دولة قطر",
+     "buy": 0,
+     "sell": 1290780,
+     "sessions": 1
+    },
+    {
+     "symbol": "NLCS",
+     "company": "National Leasing",
+     "insider": "وليد ابراهيم عبدالعزيز العبدالغني",
+     "buy": 0,
+     "sell": 18000,
+     "sessions": 1
+    }
+   ],
+   "indexSeries": [
+    {
+     "date": "2025-08-14",
+     "index": 11648.81
+    },
+    {
+     "date": "2025-08-17",
+     "index": 11588.02
+    },
+    {
+     "date": "2025-08-18",
+     "index": 11515.66
+    },
+    {
+     "date": "2025-08-19",
+     "index": 11491.59
+    },
+    {
+     "date": "2025-08-20",
+     "index": 11306.78
+    },
+    {
+     "date": "2025-08-21",
+     "index": 11342.57
+    },
+    {
+     "date": "2025-08-24",
+     "index": 11322.64
+    },
+    {
+     "date": "2025-08-25",
+     "index": 11293.42
+    },
+    {
+     "date": "2025-08-26",
+     "index": 11405.5
+    },
+    {
+     "date": "2025-08-27",
+     "index": 11338.81
+    },
+    {
+     "date": "2025-08-28",
+     "index": 11226.84
+    },
+    {
+     "date": "2025-08-31",
+     "index": 11222.38
+    },
+    {
+     "date": "2025-09-01",
+     "index": 11175.48
+    },
+    {
+     "date": "2025-09-02",
+     "index": 11183.57
+    },
+    {
+     "date": "2025-09-03",
+     "index": 11142.37
+    },
+    {
+     "date": "2025-09-04",
+     "index": 11099.21
+    },
+    {
+     "date": "2025-09-07",
+     "index": 11131.43
+    },
+    {
+     "date": "2025-09-08",
+     "index": 11124.83
+    },
+    {
+     "date": "2025-09-09",
+     "index": 11107.45
+    },
+    {
+     "date": "2025-09-10",
+     "index": 11077.07
+    },
+    {
+     "date": "2025-09-11",
+     "index": 11093.12
+    },
+    {
+     "date": "2025-09-14",
+     "index": 11131.75
+    },
+    {
+     "date": "2025-09-15",
+     "index": 11099.97
+    },
+    {
+     "date": "2025-09-16",
+     "index": 11121.58
+    },
+    {
+     "date": "2025-09-17",
+     "index": 11226.03
+    },
+    {
+     "date": "2025-09-18",
+     "index": 11307.85
+    },
+    {
+     "date": "2025-09-21",
+     "index": 11266.82
+    },
+    {
+     "date": "2025-09-22",
+     "index": 11222.06
+    },
+    {
+     "date": "2025-09-23",
+     "index": 11174.88
+    },
+    {
+     "date": "2025-09-24",
+     "index": 11078.5
+    },
+    {
+     "date": "2025-09-25",
+     "index": 10958.55
+    },
+    {
+     "date": "2025-09-28",
+     "index": 10977.66
+    },
+    {
+     "date": "2025-09-29",
+     "index": 11001.88
+    },
+    {
+     "date": "2025-09-30",
+     "index": 11052.82
+    },
+    {
+     "date": "2025-10-01",
+     "index": 10955.26
+    },
+    {
+     "date": "2025-10-02",
+     "index": 10863.09
+    },
+    {
+     "date": "2025-10-05",
+     "index": 10915.73
+    },
+    {
+     "date": "2025-10-06",
+     "index": 10888.55
+    },
+    {
+     "date": "2025-10-07",
+     "index": 10911.53
+    },
+    {
+     "date": "2025-10-08",
+     "index": 10897.38
+    },
+    {
+     "date": "2025-10-09",
+     "index": 10933.22
+    },
+    {
+     "date": "2025-10-12",
+     "index": 10839.72
+    },
+    {
+     "date": "2025-10-13",
+     "index": 10835.95
+    },
+    {
+     "date": "2025-10-14",
+     "index": 10745.92
+    },
+    {
+     "date": "2025-10-15",
+     "index": 10693.47
+    },
+    {
+     "date": "2025-10-16",
+     "index": 10850.91
+    },
+    {
+     "date": "2025-10-19",
+     "index": 10837.18
+    },
+    {
+     "date": "2025-10-20",
+     "index": 10808.5
+    },
+    {
+     "date": "2025-10-21",
+     "index": 10821.85
+    },
+    {
+     "date": "2025-10-22",
+     "index": 10850.33
+    },
+    {
+     "date": "2025-10-23",
+     "index": 10877.05
+    },
+    {
+     "date": "2025-10-26",
+     "index": 10912.14
+    },
+    {
+     "date": "2025-10-27",
+     "index": 10896.08
+    },
+    {
+     "date": "2025-10-28",
+     "index": 10924.78
+    },
+    {
+     "date": "2025-10-29",
+     "index": 10928.23
+    },
+    {
+     "date": "2025-10-30",
+     "index": 10956.78
+    },
+    {
+     "date": "2025-11-02",
+     "index": 10930.3
+    },
+    {
+     "date": "2025-11-03",
+     "index": 11027.56
+    },
+    {
+     "date": "2025-11-04",
+     "index": 11027.54
+    },
+    {
+     "date": "2025-11-05",
+     "index": 11006.6
+    },
+    {
+     "date": "2025-11-06",
+     "index": 11058.92
+    },
+    {
+     "date": "2025-11-09",
+     "index": 11047.84
+    },
+    {
+     "date": "2025-11-10",
+     "index": 11089.98
+    },
+    {
+     "date": "2025-11-11",
+     "index": 11140.77
+    },
+    {
+     "date": "2025-11-12",
+     "index": 11082.4
+    },
+    {
+     "date": "2025-11-13",
+     "index": 10957.95
+    },
+    {
+     "date": "2025-11-16",
+     "index": 10846.84
+    },
+    {
+     "date": "2025-11-17",
+     "index": 10800.54
+    },
+    {
+     "date": "2025-11-18",
+     "index": 10682.52
+    },
+    {
+     "date": "2025-11-19",
+     "index": 10751.11
+    },
+    {
+     "date": "2025-11-20",
+     "index": 10607.96
+    },
+    {
+     "date": "2025-11-23",
+     "index": 10653.13
+    },
+    {
+     "date": "2025-11-24",
+     "index": 10699.94
+    },
+    {
+     "date": "2025-11-25",
+     "index": 10607.42
+    },
+    {
+     "date": "2025-11-26",
+     "index": 10689.4
+    },
+    {
+     "date": "2025-11-27",
+     "index": 10644.73
+    },
+    {
+     "date": "2025-11-30",
+     "index": 10615.07
+    },
+    {
+     "date": "2025-12-01",
+     "index": 10621.19
+    },
+    {
+     "date": "2025-12-02",
+     "index": 10674.06
+    },
+    {
+     "date": "2025-12-03",
+     "index": 10723.46
+    },
+    {
+     "date": "2025-12-04",
+     "index": 10712.82
+    },
+    {
+     "date": "2025-12-07",
+     "index": 10704.4
+    },
+    {
+     "date": "2025-12-08",
+     "index": 10736.47
+    },
+    {
+     "date": "2025-12-09",
+     "index": 10777.39
+    },
+    {
+     "date": "2025-12-10",
+     "index": 10807.47
+    },
+    {
+     "date": "2025-12-11",
+     "index": 10903.17
+    },
+    {
+     "date": "2025-12-14",
+     "index": 10854.95
+    },
+    {
+     "date": "2025-12-15",
+     "index": 10757.96
+    },
+    {
+     "date": "2025-12-16",
+     "index": 10726.68
+    },
+    {
+     "date": "2025-12-17",
+     "index": 10654.65
+    },
+    {
+     "date": "2025-12-21",
+     "index": 10716.39
+    },
+    {
+     "date": "2025-12-22",
+     "index": 10801.39
+    },
+    {
+     "date": "2025-12-23",
+     "index": 10823.86
+    },
+    {
+     "date": "2025-12-24",
+     "index": 10837.61
+    },
+    {
+     "date": "2025-12-25",
+     "index": 10801.22
+    },
+    {
+     "date": "2025-12-28",
+     "index": 10763.27
+    },
+    {
+     "date": "2025-12-29",
+     "index": 10798.14
+    },
+    {
+     "date": "2025-12-30",
+     "index": 10793.58
+    },
+    {
+     "date": "2025-12-31",
+     "index": 10762.51
+    },
+    {
+     "date": "2026-01-04",
+     "index": 10785.36
+    },
+    {
+     "date": "2026-01-05",
+     "index": 10967.86
+    },
+    {
+     "date": "2026-01-06",
+     "index": 10989.53
+    },
+    {
+     "date": "2026-01-07",
+     "index": 11061.78
+    },
+    {
+     "date": "2026-01-08",
+     "index": 10969.33
+    },
+    {
+     "date": "2026-01-11",
+     "index": 11088.79
+    },
+    {
+     "date": "2026-01-12",
+     "index": 11162.54
+    },
+    {
+     "date": "2026-01-13",
+     "index": 11229.22
+    },
+    {
+     "date": "2026-01-14",
+     "index": 11210.66
+    },
+    {
+     "date": "2026-01-15",
+     "index": 11067.64
+    },
+    {
+     "date": "2026-01-18",
+     "index": 11124.98
+    },
+    {
+     "date": "2026-01-19",
+     "index": 11204.69
+    },
+    {
+     "date": "2026-01-20",
+     "index": 11220.22
+    },
+    {
+     "date": "2026-01-21",
+     "index": 11216.7
+    },
+    {
+     "date": "2026-01-22",
+     "index": 11336.59
+    },
+    {
+     "date": "2026-01-25",
+     "index": 11186.78
+    },
+    {
+     "date": "2026-01-26",
+     "index": 11322.05
+    },
+    {
+     "date": "2026-01-27",
+     "index": 11285.13
+    },
+    {
+     "date": "2026-01-28",
+     "index": 11373.09
+    },
+    {
+     "date": "2026-01-29",
+     "index": 11310.38
+    },
+    {
+     "date": "2026-02-01",
+     "index": 11340.3
+    },
+    {
+     "date": "2026-02-02",
+     "index": 11405.01
+    },
+    {
+     "date": "2026-02-03",
+     "index": 11420.88
+    },
+    {
+     "date": "2026-02-04",
+     "index": 11384.88
+    },
+    {
+     "date": "2026-02-05",
+     "index": 11355.36
+    },
+    {
+     "date": "2026-02-08",
+     "index": 11415.01
+    },
+    {
+     "date": "2026-02-09",
+     "index": 11502.01
+    },
+    {
+     "date": "2026-02-11",
+     "index": 11502.99
+    },
+    {
+     "date": "2026-02-12",
+     "index": 11515.81
+    },
+    {
+     "date": "2026-02-15",
+     "index": 11468.9
+    },
+    {
+     "date": "2026-02-16",
+     "index": 11426.59
+    },
+    {
+     "date": "2026-02-17",
+     "index": 11362.59
+    },
+    {
+     "date": "2026-02-18",
+     "index": 11389.02
+    },
+    {
+     "date": "2026-02-19",
+     "index": 11229.06
+    },
+    {
+     "date": "2026-02-22",
+     "index": 11161.42
+    },
+    {
+     "date": "2026-02-23",
+     "index": 11282.24
+    },
+    {
+     "date": "2026-02-24",
+     "index": 11289.75
+    },
+    {
+     "date": "2026-02-25",
+     "index": 11270.62
+    },
+    {
+     "date": "2026-02-26",
+     "index": 11055.18
+    },
+    {
+     "date": "2026-03-02",
+     "index": 10581.03
+    },
+    {
+     "date": "2026-03-03",
+     "index": 10509.82
+    },
+    {
+     "date": "2026-03-04",
+     "index": 10588.86
+    },
+    {
+     "date": "2026-03-05",
+     "index": 10699.28
+    },
+    {
+     "date": "2026-03-08",
+     "index": 10687.57
+    },
+    {
+     "date": "2026-03-09",
+     "index": 10410.16
+    },
+    {
+     "date": "2026-03-10",
+     "index": 10670.23
+    },
+    {
+     "date": "2026-03-11",
+     "index": 10577.25
+    },
+    {
+     "date": "2026-03-12",
+     "index": 10485.94
+    },
+    {
+     "date": "2026-03-15",
+     "index": 10461.0
+    },
+    {
+     "date": "2026-03-16",
+     "index": 10333.32
+    },
+    {
+     "date": "2026-03-17",
+     "index": 10393.29
+    },
+    {
+     "date": "2026-03-18",
+     "index": 10292.16
+    },
+    {
+     "date": "2026-03-24",
+     "index": 10150.7
+    },
+    {
+     "date": "2026-03-25",
+     "index": 10290.29
+    },
+    {
+     "date": "2026-03-26",
+     "index": 10160.33
+    },
+    {
+     "date": "2026-03-29",
+     "index": 10060.68
+    },
+    {
+     "date": "2026-03-30",
+     "index": 10094.81
+    },
+    {
+     "date": "2026-03-31",
+     "index": 10188.47
+    },
+    {
+     "date": "2026-04-01",
+     "index": 10270.69
+    },
+    {
+     "date": "2026-04-02",
+     "index": 10227.18
+    },
+    {
+     "date": "2026-04-05",
+     "index": 10160.38
+    },
+    {
+     "date": "2026-04-06",
+     "index": 10346.22
+    },
+    {
+     "date": "2026-04-07",
+     "index": 10285.66
+    },
+    {
+     "date": "2026-04-08",
+     "index": 10662.33
+    },
+    {
+     "date": "2026-04-09",
+     "index": 10641.68
+    },
+    {
+     "date": "2026-04-12",
+     "index": 10629.8
+    },
+    {
+     "date": "2026-04-13",
+     "index": 10624.58
+    },
+    {
+     "date": "2026-04-14",
+     "index": 10690.77
+    },
+    {
+     "date": "2026-04-15",
+     "index": 10733.95
+    },
+    {
+     "date": "2026-04-16",
+     "index": 10714.65
+    },
+    {
+     "date": "2026-04-19",
+     "index": 10718.23
+    },
+    {
+     "date": "2026-04-20",
+     "index": 10672.2
+    },
+    {
+     "date": "2026-04-21",
+     "index": 10684.76
+    },
+    {
+     "date": "2026-04-22",
+     "index": 10677.64
+    },
+    {
+     "date": "2026-04-23",
+     "index": 10662.42
+    },
+    {
+     "date": "2026-04-26",
+     "index": 10668.05
+    },
+    {
+     "date": "2026-04-27",
+     "index": 10641.9
+    },
+    {
+     "date": "2026-04-28",
+     "index": 10622.63
+    },
+    {
+     "date": "2026-04-29",
+     "index": 10611.82
+    },
+    {
+     "date": "2026-04-30",
+     "index": 10487.91
+    },
+    {
+     "date": "2026-05-03",
+     "index": 10533.42
+    },
+    {
+     "date": "2026-05-04",
+     "index": 10564.57
+    },
+    {
+     "date": "2026-05-05",
+     "index": 10504.62
+    },
+    {
+     "date": "2026-05-06",
+     "index": 10649.25
+    },
+    {
+     "date": "2026-05-07",
+     "index": 10714.25
+    },
+    {
+     "date": "2026-05-10",
+     "index": 10663.5
+    },
+    {
+     "date": "2026-05-11",
+     "index": 10631.25
+    },
+    {
+     "date": "2026-05-12",
+     "index": 10523.92
+    },
+    {
+     "date": "2026-05-13",
+     "index": 10472.69
+    },
+    {
+     "date": "2026-05-14",
+     "index": 10493.27
+    },
+    {
+     "date": "2026-05-17",
+     "index": 10484.17
+    },
+    {
+     "date": "2026-05-18",
+     "index": 10372.1
+    },
+    {
+     "date": "2026-05-19",
+     "index": 10418.28
+    },
+    {
+     "date": "2026-05-20",
+     "index": 10352.7
+    },
+    {
+     "date": "2026-05-21",
+     "index": 10379.69
+    },
+    {
+     "date": "2026-05-24",
+     "index": 10706.7
+    },
+    {
+     "date": "2026-05-25",
+     "index": 10591.56
+    },
+    {
+     "date": "2026-05-31",
+     "index": 10554.96
+    },
+    {
+     "date": "2026-06-01",
+     "index": 10438.86
+    },
+    {
+     "date": "2026-06-02",
+     "index": 10407.45
+    },
+    {
+     "date": "2026-06-03",
+     "index": 10392.54
+    },
+    {
+     "date": "2026-06-04",
+     "index": 10335.86
+    },
+    {
+     "date": "2026-06-07",
+     "index": 10305.12
+    },
+    {
+     "date": "2026-06-08",
+     "index": 10092.04
+    },
+    {
+     "date": "2026-06-09",
+     "index": 10282.37
+    },
+    {
+     "date": "2026-06-10",
+     "index": 10289.32
+    },
+    {
+     "date": "2026-06-11",
+     "index": 10263.88
+    },
+    {
+     "date": "2026-06-14",
+     "index": 10461.0
+    },
+    {
+     "date": "2026-06-15",
+     "index": 10553.75
+    },
+    {
+     "date": "2026-06-16",
+     "index": 10551.42
+    },
+    {
+     "date": "2026-06-17",
+     "index": 10575.5
+    },
+    {
+     "date": "2026-06-18",
+     "index": 10510.92
+    },
+    {
+     "date": "2026-06-21",
+     "index": 10480.95
+    },
+    {
+     "date": "2026-06-22",
+     "index": 10446.04
+    },
+    {
+     "date": "2026-06-23",
+     "index": 10408.77
+    },
+    {
+     "date": "2026-06-24",
+     "index": 10321.23
+    },
+    {
+     "date": "2026-06-25",
+     "index": 10281.81
+    },
+    {
+     "date": "2026-06-28",
+     "index": 10293.72
+    },
+    {
+     "date": "2026-06-29",
+     "index": 10251.83
+    },
+    {
+     "date": "2026-06-30",
+     "index": 10241.75
+    },
+    {
+     "date": "2026-07-01",
+     "index": 10290.82
+    },
+    {
+     "date": "2026-07-02",
+     "index": 10211.16
+    },
+    {
+     "date": "2026-07-05",
+     "index": 10246.22
+    },
+    {
+     "date": "2026-07-06",
+     "index": 10267.16
+    },
+    {
+     "date": "2026-07-07",
+     "index": 10254.6
+    },
+    {
+     "date": "2026-07-08",
+     "index": 10176.15
+    },
+    {
+     "date": "2026-07-09",
+     "index": 10090.57
+    },
+    {
+     "date": "2026-07-12",
+     "index": 10103.22
+    },
+    {
+     "date": "2026-07-19",
+     "index": 9954.84
+    },
+    {
+     "date": "2026-07-20",
+     "index": 10083.79
+    },
+    {
+     "date": "2026-07-21",
+     "index": 10107.36
+    },
+    {
+     "date": "2026-07-22",
+     "index": 10066.51
+    },
+    {
+     "date": "2026-07-23",
+     "index": 10032.48
+    },
+    {
+     "date": "2026-07-26",
+     "index": 10003.67
+    },
+    {
+     "date": "2026-07-27",
+     "index": 10085.39
+    },
+    {
+     "date": "2026-07-28",
+     "index": 10022.69
+    },
+    {
+     "date": "2026-07-29",
+     "index": 10006.91
+    },
+    {
+     "date": "2026-07-30",
+     "index": 9920.69
+    },
+    {
+     "date": "2026-08-02",
+     "index": 10050.74
+    },
+    {
+     "date": "2026-08-03",
+     "index": 10133.67
+    },
+    {
+     "date": "2026-08-04",
+     "index": 10092.58
+    },
+    {
+     "date": "2026-08-05",
+     "index": 10181.82
+    },
+    {
+     "date": "2026-08-06",
+     "index": 10112.25
+    },
+    {
+     "date": "2026-08-09",
+     "index": 10100.11
+    },
+    {
+     "date": "2026-08-10",
+     "index": 10097.44
+    },
+    {
+     "date": "2026-08-11",
+     "index": 10018.06
+    },
+    {
+     "date": "2026-08-12",
+     "index": 10055.6
+    },
+    {
+     "date": "2026-08-13",
+     "index": 10020.84
+    }
+   ]
+  },
+  "weekly": {
+   "period": {
+    "kind": "weekly",
+    "tab": "Weekly",
+    "label": "9–13 August 2026",
+    "path": "2026/08/W2",
+    "start": "2026-08-09",
+    "end": "2026-08-13",
+    "sessions": 5
+   },
+   "share": {
+    "open": 4.31,
+    "high": 4.47,
+    "low": 4.23,
+    "close": 4.33,
+    "previousClose": 4.3,
+    "changeValue": 0.03,
+    "changePct": 0.698,
+    "volume": 42528165,
+    "value": 183977328.2,
+    "trades": 3591,
+    "high52": 4.445,
+    "low52": 3.435,
+    "oneYearChangePct": 3.564,
+    "oneYearAgo": {
+     "date": "2025-08-13",
+     "close": 4.181
+    },
+    "priceToBook": 3.718,
+    "bookValuePerShare": 1.1646,
+    "priceToBookIsApproximate": true,
+    "dividendYieldPct": 0.0,
+    "cashDividend": 0.0,
+    "eps": 0.25,
+    "peRatio": 16.77,
+    "sharesOutstanding": 4493329500,
+    "marketCap": 19456116735.0,
+    "capRankMarket": 7,
+    "capRankMarketOf": 54,
+    "capRankSector": 2,
+    "capRankSectorOf": 10
+   },
+   "index": {
+    "name": "QE Index",
+    "indexValue": 10020.84,
+    "changeValue": -91.41,
+    "changePct": -0.9,
+    "volume": 963066663,
+    "tradedValue": 2572732570.144,
+    "trades": 109421,
+    "mainVolume": 962072375,
+    "mainValue": 2570640793.413,
+    "ventureVolume": 994288,
+    "ventureValue": 2091776.731,
+    "tradedStocks": 54,
+    "gainers": 23,
+    "losers": 28,
+    "marketCap": 601340435012.114,
+    "high52": 11648.81,
+    "low52": 9920.69,
+    "pctFromHigh52": -13.98,
+    "pctFromLow52": 1.01,
+    "window": {
+     "weeks": 52,
+     "sessions": 247,
+     "basis": "daily closes from MarketSummary.INDEX_VALUE"
+    }
+   },
+   "comparison": [
+    {
+     "label": "Estithmar Holding Share",
+     "changePct": 0.698
+    },
+    {
+     "label": "QE Index",
+     "changePct": -0.9
+    },
+    {
+     "label": "Industrials Index",
+     "changePct": -3.18
+    }
+   ],
+   "sectorIndices": [
+    {
+     "code": "QBNK",
+     "name": "Banks&Financial Services",
+     "value": 5059.44,
+     "changeValue": -34.74,
+     "changePct": -0.68
+    },
+    {
+     "code": "QCON",
+     "name": "Consumer Goods&Services",
+     "value": 7897.93,
+     "changeValue": 1.11,
+     "changePct": 0.01
+    },
+    {
+     "code": "QIND",
+     "name": "Industrials",
+     "value": 3837.52,
+     "changeValue": -126.23,
+     "changePct": -3.18
+    },
+    {
+     "code": "QINS",
+     "name": "Insurance",
+     "value": 2743.57,
+     "changeValue": -5.33,
+     "changePct": -0.19
+    },
+    {
+     "code": "QREA",
+     "name": "Real Estate",
+     "value": 1395.84,
+     "changeValue": -29.29,
+     "changePct": -2.06
+    },
+    {
+     "code": "QTLC",
+     "name": "Telecoms",
+     "value": 2408.68,
+     "changeValue": 19.97,
+     "changePct": 0.84
+    },
+    {
+     "code": "QTRN",
+     "name": "Transportation",
+     "value": 5370.36,
+     "changeValue": 17.22,
+     "changePct": 0.32
+    }
+   ],
+   "allIndices": [
+    {
+     "code": "GNRI",
+     "name": "General Index",
+     "value": 10020.84,
+     "changeValue": -91.41,
+     "changePct": -0.9
+    },
+    {
+     "code": "QETR",
+     "name": "QE Total Return Index",
+     "value": 24762.76,
+     "changeValue": -225.88,
+     "changePct": -0.9
+    },
+    {
+     "code": "QERP",
+     "name": "QE Al Rayan Islamic Index - Price",
+     "value": 2177.45,
+     "changeValue": -16.58,
+     "changePct": -0.76
+    },
+    {
+     "code": "QERI",
+     "name": "QE Al Rayan Islamic Index",
+     "value": 5033.85,
+     "changeValue": -38.34,
+     "changePct": -0.76
+    },
+    {
+     "code": "QEAS",
+     "name": "QE All Share Index",
+     "value": 3930.5,
+     "changeValue": -36.32,
+     "changePct": -0.92
+    },
+    {
+     "code": "QBNK",
+     "name": "All Share Banks&Financial Services Index",
+     "value": 5059.44,
+     "changeValue": -34.74,
+     "changePct": -0.68
+    },
+    {
+     "code": "QCON",
+     "name": "All Share Consumer Goods&Services Index",
+     "value": 7897.93,
+     "changeValue": 1.11,
+     "changePct": 0.01
+    },
+    {
+     "code": "QIND",
+     "name": "All Share Industrials Index",
+     "value": 3837.52,
+     "changeValue": -126.23,
+     "changePct": -3.18
+    },
+    {
+     "code": "QINS",
+     "name": "All Share Insurance Index",
+     "value": 2743.57,
+     "changeValue": -5.33,
+     "changePct": -0.19
+    },
+    {
+     "code": "QREA",
+     "name": "All Share Real Estate Index",
+     "value": 1395.84,
+     "changeValue": -29.29,
+     "changePct": -2.06
+    },
+    {
+     "code": "QTLC",
+     "name": "All Share Telecoms Index",
+     "value": 2408.68,
+     "changeValue": 19.97,
+     "changePct": 0.84
+    },
+    {
+     "code": "QTRN",
+     "name": "All Share Transportation Index",
+     "value": 5370.36,
+     "changeValue": 17.22,
+     "changePct": 0.32
+    }
+   ],
+   "topGainers": [
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.317,
+     "changePct": 7.248
+    },
+    {
+     "symbol": "BEMA",
+     "name": "Beema",
+     "nameAr": "بيمه",
+     "close": 5.5,
+     "changePct": 6.362
+    },
+    {
+     "symbol": "ZHCD",
+     "name": "Zad Holding Company",
+     "nameAr": "زاد",
+     "close": 12.88,
+     "changePct": 4.461
+    },
+    {
+     "symbol": "NLCS",
+     "name": "National Leasing",
+     "nameAr": "الاجارة",
+     "close": 0.733,
+     "changePct": 3.824
+    },
+    {
+     "symbol": "MRDS",
+     "name": "Mazaya",
+     "nameAr": "مزايا",
+     "close": 0.568,
+     "changePct": 3.65
+    }
+   ],
+   "topLosers": [
+    {
+     "symbol": "GISS",
+     "name": "Gulf International",
+     "nameAr": "الخليج الدولية",
+     "close": 1.765,
+     "changePct": -7.833
+    },
+    {
+     "symbol": "IQCD",
+     "name": "Industries Qatar",
+     "nameAr": "صناعات قطر",
+     "close": 10.04,
+     "changePct": -4.834
+    },
+    {
+     "symbol": "GWCS",
+     "name": "Gulf warehousing Co",
+     "nameAr": "مخازن",
+     "close": 2.358,
+     "changePct": -4.689
+    },
+    {
+     "symbol": "DBIS",
+     "name": "Dlala",
+     "nameAr": "دلالة",
+     "close": 1.63,
+     "changePct": -4.174
+    },
+    {
+     "symbol": "ABQK",
+     "name": "Ahli Bank",
+     "nameAr": "الاهلي",
+     "close": 4.012,
+     "changePct": -4.042
+    }
+   ],
+   "topByValue": [
+    {
+     "symbol": "IQCD",
+     "name": "Industries Qatar",
+     "nameAr": "صناعات قطر",
+     "close": 10.04,
+     "tradedValue": 267482678.267
+    },
+    {
+     "symbol": "QNBK",
+     "name": "QNB",
+     "nameAr": "QNB",
+     "close": 16.85,
+     "tradedValue": 243196251.13
+    },
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.317,
+     "tradedValue": 239155458.14
+    },
+    {
+     "symbol": "IGRD",
+     "name": "Estithmar Holding",
+     "nameAr": "استثمار القابضة",
+     "close": 4.33,
+     "tradedValue": 183977328.2
+    },
+    {
+     "symbol": "QIBK",
+     "name": "Qatar Islamic Bank",
+     "nameAr": "المصرف",
+     "close": 22.42,
+     "tradedValue": 183111571.43
+    }
+   ],
+   "topByVolume": [
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.317,
+     "tradedVolume": 183469430.0
+    },
+    {
+     "symbol": "MARK",
+     "name": "Rayan",
+     "nameAr": "الريان",
+     "close": 1.982,
+     "tradedVolume": 87167576.0
+    },
+    {
+     "symbol": "MRDS",
+     "name": "Mazaya",
+     "nameAr": "مزايا",
+     "close": 0.568,
+     "tradedVolume": 83629921.0
+    },
+    {
+     "symbol": "QAMC",
+     "name": "QAMCO",
+     "nameAr": "قامكو",
+     "close": 1.532,
+     "tradedVolume": 77635077.0
+    },
+    {
+     "symbol": "GISS",
+     "name": "Gulf International",
+     "nameAr": "الخليج الدولية",
+     "close": 1.765,
+     "tradedVolume": 53719771.0
+    }
+   ],
+   "shareholderActivity": [
+    {
+     "nationality": "Qatari",
+     "code": "QTR",
+     "totalBuyPct": 43.003,
+     "totalSellPct": 59.702,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 52,
+       "tradedValue": 624918943.535,
+       "tradedVolume": 347090166,
+       "tradedValuePct": 24.31
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 54,
+       "tradedValue": 623510254.678,
+       "tradedVolume": 343533686,
+       "tradedValuePct": 24.255
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 46,
+       "tradedValue": 480529365.239,
+       "tradedVolume": 205081348,
+       "tradedValuePct": 18.693
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 43,
+       "tradedValue": 911209598.537,
+       "tradedVolume": 318682986,
+       "tradedValuePct": 35.447
+      }
+     ]
+    },
+    {
+     "nationality": "GCC",
+     "code": "GCC",
+     "totalBuyPct": 1.733,
+     "totalSellPct": 1.317,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 32,
+       "tradedValue": 8369581.849,
+       "tradedVolume": 5464311,
+       "tradedValuePct": 0.326
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 31,
+       "tradedValue": 8149283.105,
+       "tradedVolume": 5492244,
+       "tradedValuePct": 0.317
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 17,
+       "tradedValue": 36172045.711,
+       "tradedVolume": 4744906,
+       "tradedValuePct": 1.407
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 18,
+       "tradedValue": 25703267.108,
+       "tradedVolume": 3978217,
+       "tradedValuePct": 1.0
+      }
+     ]
+    },
+    {
+     "nationality": "Arab",
+     "code": "ARB",
+     "totalBuyPct": 7.140000000000001,
+     "totalSellPct": 7.241,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 51,
+       "tradedValue": 182702429.139,
+       "tradedVolume": 115219085,
+       "tradedValuePct": 7.107
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 52,
+       "tradedValue": 186002145.088,
+       "tradedVolume": 117908864,
+       "tradedValuePct": 7.236
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 2,
+       "tradedValue": 850340.66,
+       "tradedVolume": 79966,
+       "tradedValuePct": 0.033
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 2,
+       "tradedValue": 123699.93,
+       "tradedVolume": 90285,
+       "tradedValuePct": 0.005
+      }
+     ]
+    },
+    {
+     "nationality": "Foreigners",
+     "code": "FRN",
+     "totalBuyPct": 48.124,
+     "totalSellPct": 31.741,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 51,
+       "tradedValue": 40829450.328,
+       "tradedVolume": 22654195,
+       "tradedValuePct": 1.588
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 49,
+       "tradedValue": 42972439.701,
+       "tradedVolume": 25084219,
+       "tradedValuePct": 1.672
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 51,
+       "tradedValue": 1196268636.952,
+       "tradedVolume": 261738398,
+       "tradedValuePct": 46.536
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 50,
+       "tradedValue": 772970105.266,
+       "tradedVolume": 147301874,
+       "tradedValuePct": 30.069
+      }
+     ]
+    }
+   ],
+   "ownership": {
+    "current": {
+     "byNationality": {
+      "GCC": 0.281,
+      "Arab": 0.778,
+      "Foreigners": 3.613,
+      "Qatari": 95.327
+     },
+     "institutionsPct": 29.383,
+     "individualsPct": 70.616,
+     "detail": [
+      {
+       "nationality": "GCC",
+       "investorType": "Individuals",
+       "holders": 25,
+       "shares": 1373239,
+       "pct": 0.031
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Institutions",
+       "holders": 14,
+       "shares": 11250762,
+       "pct": 0.25
+      },
+      {
+       "nationality": "Arab",
+       "investorType": "Individuals",
+       "holders": 263,
+       "shares": 34978213,
+       "pct": 0.778
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Institutions",
+       "holders": 145,
+       "shares": 138362146,
+       "pct": 3.079
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Individuals",
+       "holders": 184,
+       "shares": 24010570,
+       "pct": 0.534
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Institutions",
+       "holders": 70,
+       "shares": 1170708231,
+       "pct": 26.054
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Individuals",
+       "holders": 3807,
+       "shares": 3112646339,
+       "pct": 69.273
+      }
+     ]
+    },
+    "previous": {
+     "byNationality": {
+      "GCC": 0.283,
+      "Arab": 0.777,
+      "Foreigners": 3.631,
+      "Qatari": 95.308
+     },
+     "institutionsPct": 29.398,
+     "individualsPct": 70.601,
+     "detail": [
+      {
+       "nationality": "GCC",
+       "investorType": "Individuals",
+       "holders": 25,
+       "shares": 1384235,
+       "pct": 0.031
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Institutions",
+       "holders": 14,
+       "shares": 11314137,
+       "pct": 0.252
+      },
+      {
+       "nationality": "Arab",
+       "investorType": "Individuals",
+       "holders": 248,
+       "shares": 34918537,
+       "pct": 0.777
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Institutions",
+       "holders": 145,
+       "shares": 139083217,
+       "pct": 3.095
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Individuals",
+       "holders": 182,
+       "shares": 24104347,
+       "pct": 0.536
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Institutions",
+       "holders": 70,
+       "shares": 1170579518,
+       "pct": 26.051
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Individuals",
+       "holders": 3809,
+       "shares": 3111945509,
+       "pct": 69.257
+      }
+     ]
+    },
+    "currentDate": "2026-08-13",
+    "previousDate": "2026-08-06"
+   },
+   "insiderTrades": [
+    {
+     "symbol": "DUBK",
+     "company": "Dukhan Bank",
+     "insider": "شركة قطرالقابضة",
+     "buy": 0,
+     "sell": 3872340,
+     "sessions": 1
+    },
+    {
+     "symbol": "DBIS",
+     "company": "Dlala",
+     "insider": "بدر عبد العزيز عبد الرحمن الدرويش فخرو",
+     "buy": 0,
+     "sell": 3229374,
+     "sessions": 1
+    },
+    {
+     "symbol": "QEWS",
+     "company": "Nebras Energy",
+     "insider": "جهاز قطر للإستثمار حكومة دولة قطر",
+     "buy": 0,
+     "sell": 1290780,
+     "sessions": 1
+    },
+    {
+     "symbol": "ABQK",
+     "company": "Ahli Bank",
+     "insider": "شركة فخرو القابضة",
+     "buy": 734443,
+     "sell": 0,
+     "sessions": 1
+    },
+    {
+     "symbol": "QFBQ",
+     "company": "Lesha Bank (QFC)",
+     "insider": "الشيخ فيصل ثاني فيصل ثاني آل ثاني*",
+     "buy": 300000,
+     "sell": 0,
+     "sessions": 1
+    },
+    {
+     "symbol": "QFBQ",
+     "company": "Lesha Bank (QFC)",
+     "insider": "مشعل محمد عبد الله زيد آل محمود",
+     "buy": 0,
+     "sell": 169341,
+     "sessions": 1
+    },
+    {
+     "symbol": "DOHI",
+     "company": "Doha Insurance Group",
+     "insider": "جاسم محمد خالد حمد ال ثاني",
+     "buy": 0,
+     "sell": 140000,
+     "sessions": 1
+    },
+    {
+     "symbol": "MARK",
+     "company": "Rayan",
+     "insider": "شركة/ جي اس القابضة",
+     "buy": 50000,
+     "sell": 0,
+     "sessions": 1
+    },
+    {
+     "symbol": "NLCS",
+     "company": "National Leasing",
+     "insider": "وليد ابراهيم عبدالعزيز العبدالغني",
+     "buy": 0,
+     "sell": 18000,
+     "sessions": 1
+    },
+    {
+     "symbol": "QISI",
+     "company": "Islamic Insurance",
+     "insider": "رامي محمد الأغا",
+     "buy": 3800,
+     "sell": 2100,
+     "sessions": 3
+    }
+   ],
+   "indexSeries": [
+    {
+     "date": "2025-08-14",
+     "index": 11648.81
+    },
+    {
+     "date": "2025-08-17",
+     "index": 11588.02
+    },
+    {
+     "date": "2025-08-18",
+     "index": 11515.66
+    },
+    {
+     "date": "2025-08-19",
+     "index": 11491.59
+    },
+    {
+     "date": "2025-08-20",
+     "index": 11306.78
+    },
+    {
+     "date": "2025-08-21",
+     "index": 11342.57
+    },
+    {
+     "date": "2025-08-24",
+     "index": 11322.64
+    },
+    {
+     "date": "2025-08-25",
+     "index": 11293.42
+    },
+    {
+     "date": "2025-08-26",
+     "index": 11405.5
+    },
+    {
+     "date": "2025-08-27",
+     "index": 11338.81
+    },
+    {
+     "date": "2025-08-28",
+     "index": 11226.84
+    },
+    {
+     "date": "2025-08-31",
+     "index": 11222.38
+    },
+    {
+     "date": "2025-09-01",
+     "index": 11175.48
+    },
+    {
+     "date": "2025-09-02",
+     "index": 11183.57
+    },
+    {
+     "date": "2025-09-03",
+     "index": 11142.37
+    },
+    {
+     "date": "2025-09-04",
+     "index": 11099.21
+    },
+    {
+     "date": "2025-09-07",
+     "index": 11131.43
+    },
+    {
+     "date": "2025-09-08",
+     "index": 11124.83
+    },
+    {
+     "date": "2025-09-09",
+     "index": 11107.45
+    },
+    {
+     "date": "2025-09-10",
+     "index": 11077.07
+    },
+    {
+     "date": "2025-09-11",
+     "index": 11093.12
+    },
+    {
+     "date": "2025-09-14",
+     "index": 11131.75
+    },
+    {
+     "date": "2025-09-15",
+     "index": 11099.97
+    },
+    {
+     "date": "2025-09-16",
+     "index": 11121.58
+    },
+    {
+     "date": "2025-09-17",
+     "index": 11226.03
+    },
+    {
+     "date": "2025-09-18",
+     "index": 11307.85
+    },
+    {
+     "date": "2025-09-21",
+     "index": 11266.82
+    },
+    {
+     "date": "2025-09-22",
+     "index": 11222.06
+    },
+    {
+     "date": "2025-09-23",
+     "index": 11174.88
+    },
+    {
+     "date": "2025-09-24",
+     "index": 11078.5
+    },
+    {
+     "date": "2025-09-25",
+     "index": 10958.55
+    },
+    {
+     "date": "2025-09-28",
+     "index": 10977.66
+    },
+    {
+     "date": "2025-09-29",
+     "index": 11001.88
+    },
+    {
+     "date": "2025-09-30",
+     "index": 11052.82
+    },
+    {
+     "date": "2025-10-01",
+     "index": 10955.26
+    },
+    {
+     "date": "2025-10-02",
+     "index": 10863.09
+    },
+    {
+     "date": "2025-10-05",
+     "index": 10915.73
+    },
+    {
+     "date": "2025-10-06",
+     "index": 10888.55
+    },
+    {
+     "date": "2025-10-07",
+     "index": 10911.53
+    },
+    {
+     "date": "2025-10-08",
+     "index": 10897.38
+    },
+    {
+     "date": "2025-10-09",
+     "index": 10933.22
+    },
+    {
+     "date": "2025-10-12",
+     "index": 10839.72
+    },
+    {
+     "date": "2025-10-13",
+     "index": 10835.95
+    },
+    {
+     "date": "2025-10-14",
+     "index": 10745.92
+    },
+    {
+     "date": "2025-10-15",
+     "index": 10693.47
+    },
+    {
+     "date": "2025-10-16",
+     "index": 10850.91
+    },
+    {
+     "date": "2025-10-19",
+     "index": 10837.18
+    },
+    {
+     "date": "2025-10-20",
+     "index": 10808.5
+    },
+    {
+     "date": "2025-10-21",
+     "index": 10821.85
+    },
+    {
+     "date": "2025-10-22",
+     "index": 10850.33
+    },
+    {
+     "date": "2025-10-23",
+     "index": 10877.05
+    },
+    {
+     "date": "2025-10-26",
+     "index": 10912.14
+    },
+    {
+     "date": "2025-10-27",
+     "index": 10896.08
+    },
+    {
+     "date": "2025-10-28",
+     "index": 10924.78
+    },
+    {
+     "date": "2025-10-29",
+     "index": 10928.23
+    },
+    {
+     "date": "2025-10-30",
+     "index": 10956.78
+    },
+    {
+     "date": "2025-11-02",
+     "index": 10930.3
+    },
+    {
+     "date": "2025-11-03",
+     "index": 11027.56
+    },
+    {
+     "date": "2025-11-04",
+     "index": 11027.54
+    },
+    {
+     "date": "2025-11-05",
+     "index": 11006.6
+    },
+    {
+     "date": "2025-11-06",
+     "index": 11058.92
+    },
+    {
+     "date": "2025-11-09",
+     "index": 11047.84
+    },
+    {
+     "date": "2025-11-10",
+     "index": 11089.98
+    },
+    {
+     "date": "2025-11-11",
+     "index": 11140.77
+    },
+    {
+     "date": "2025-11-12",
+     "index": 11082.4
+    },
+    {
+     "date": "2025-11-13",
+     "index": 10957.95
+    },
+    {
+     "date": "2025-11-16",
+     "index": 10846.84
+    },
+    {
+     "date": "2025-11-17",
+     "index": 10800.54
+    },
+    {
+     "date": "2025-11-18",
+     "index": 10682.52
+    },
+    {
+     "date": "2025-11-19",
+     "index": 10751.11
+    },
+    {
+     "date": "2025-11-20",
+     "index": 10607.96
+    },
+    {
+     "date": "2025-11-23",
+     "index": 10653.13
+    },
+    {
+     "date": "2025-11-24",
+     "index": 10699.94
+    },
+    {
+     "date": "2025-11-25",
+     "index": 10607.42
+    },
+    {
+     "date": "2025-11-26",
+     "index": 10689.4
+    },
+    {
+     "date": "2025-11-27",
+     "index": 10644.73
+    },
+    {
+     "date": "2025-11-30",
+     "index": 10615.07
+    },
+    {
+     "date": "2025-12-01",
+     "index": 10621.19
+    },
+    {
+     "date": "2025-12-02",
+     "index": 10674.06
+    },
+    {
+     "date": "2025-12-03",
+     "index": 10723.46
+    },
+    {
+     "date": "2025-12-04",
+     "index": 10712.82
+    },
+    {
+     "date": "2025-12-07",
+     "index": 10704.4
+    },
+    {
+     "date": "2025-12-08",
+     "index": 10736.47
+    },
+    {
+     "date": "2025-12-09",
+     "index": 10777.39
+    },
+    {
+     "date": "2025-12-10",
+     "index": 10807.47
+    },
+    {
+     "date": "2025-12-11",
+     "index": 10903.17
+    },
+    {
+     "date": "2025-12-14",
+     "index": 10854.95
+    },
+    {
+     "date": "2025-12-15",
+     "index": 10757.96
+    },
+    {
+     "date": "2025-12-16",
+     "index": 10726.68
+    },
+    {
+     "date": "2025-12-17",
+     "index": 10654.65
+    },
+    {
+     "date": "2025-12-21",
+     "index": 10716.39
+    },
+    {
+     "date": "2025-12-22",
+     "index": 10801.39
+    },
+    {
+     "date": "2025-12-23",
+     "index": 10823.86
+    },
+    {
+     "date": "2025-12-24",
+     "index": 10837.61
+    },
+    {
+     "date": "2025-12-25",
+     "index": 10801.22
+    },
+    {
+     "date": "2025-12-28",
+     "index": 10763.27
+    },
+    {
+     "date": "2025-12-29",
+     "index": 10798.14
+    },
+    {
+     "date": "2025-12-30",
+     "index": 10793.58
+    },
+    {
+     "date": "2025-12-31",
+     "index": 10762.51
+    },
+    {
+     "date": "2026-01-04",
+     "index": 10785.36
+    },
+    {
+     "date": "2026-01-05",
+     "index": 10967.86
+    },
+    {
+     "date": "2026-01-06",
+     "index": 10989.53
+    },
+    {
+     "date": "2026-01-07",
+     "index": 11061.78
+    },
+    {
+     "date": "2026-01-08",
+     "index": 10969.33
+    },
+    {
+     "date": "2026-01-11",
+     "index": 11088.79
+    },
+    {
+     "date": "2026-01-12",
+     "index": 11162.54
+    },
+    {
+     "date": "2026-01-13",
+     "index": 11229.22
+    },
+    {
+     "date": "2026-01-14",
+     "index": 11210.66
+    },
+    {
+     "date": "2026-01-15",
+     "index": 11067.64
+    },
+    {
+     "date": "2026-01-18",
+     "index": 11124.98
+    },
+    {
+     "date": "2026-01-19",
+     "index": 11204.69
+    },
+    {
+     "date": "2026-01-20",
+     "index": 11220.22
+    },
+    {
+     "date": "2026-01-21",
+     "index": 11216.7
+    },
+    {
+     "date": "2026-01-22",
+     "index": 11336.59
+    },
+    {
+     "date": "2026-01-25",
+     "index": 11186.78
+    },
+    {
+     "date": "2026-01-26",
+     "index": 11322.05
+    },
+    {
+     "date": "2026-01-27",
+     "index": 11285.13
+    },
+    {
+     "date": "2026-01-28",
+     "index": 11373.09
+    },
+    {
+     "date": "2026-01-29",
+     "index": 11310.38
+    },
+    {
+     "date": "2026-02-01",
+     "index": 11340.3
+    },
+    {
+     "date": "2026-02-02",
+     "index": 11405.01
+    },
+    {
+     "date": "2026-02-03",
+     "index": 11420.88
+    },
+    {
+     "date": "2026-02-04",
+     "index": 11384.88
+    },
+    {
+     "date": "2026-02-05",
+     "index": 11355.36
+    },
+    {
+     "date": "2026-02-08",
+     "index": 11415.01
+    },
+    {
+     "date": "2026-02-09",
+     "index": 11502.01
+    },
+    {
+     "date": "2026-02-11",
+     "index": 11502.99
+    },
+    {
+     "date": "2026-02-12",
+     "index": 11515.81
+    },
+    {
+     "date": "2026-02-15",
+     "index": 11468.9
+    },
+    {
+     "date": "2026-02-16",
+     "index": 11426.59
+    },
+    {
+     "date": "2026-02-17",
+     "index": 11362.59
+    },
+    {
+     "date": "2026-02-18",
+     "index": 11389.02
+    },
+    {
+     "date": "2026-02-19",
+     "index": 11229.06
+    },
+    {
+     "date": "2026-02-22",
+     "index": 11161.42
+    },
+    {
+     "date": "2026-02-23",
+     "index": 11282.24
+    },
+    {
+     "date": "2026-02-24",
+     "index": 11289.75
+    },
+    {
+     "date": "2026-02-25",
+     "index": 11270.62
+    },
+    {
+     "date": "2026-02-26",
+     "index": 11055.18
+    },
+    {
+     "date": "2026-03-02",
+     "index": 10581.03
+    },
+    {
+     "date": "2026-03-03",
+     "index": 10509.82
+    },
+    {
+     "date": "2026-03-04",
+     "index": 10588.86
+    },
+    {
+     "date": "2026-03-05",
+     "index": 10699.28
+    },
+    {
+     "date": "2026-03-08",
+     "index": 10687.57
+    },
+    {
+     "date": "2026-03-09",
+     "index": 10410.16
+    },
+    {
+     "date": "2026-03-10",
+     "index": 10670.23
+    },
+    {
+     "date": "2026-03-11",
+     "index": 10577.25
+    },
+    {
+     "date": "2026-03-12",
+     "index": 10485.94
+    },
+    {
+     "date": "2026-03-15",
+     "index": 10461.0
+    },
+    {
+     "date": "2026-03-16",
+     "index": 10333.32
+    },
+    {
+     "date": "2026-03-17",
+     "index": 10393.29
+    },
+    {
+     "date": "2026-03-18",
+     "index": 10292.16
+    },
+    {
+     "date": "2026-03-24",
+     "index": 10150.7
+    },
+    {
+     "date": "2026-03-25",
+     "index": 10290.29
+    },
+    {
+     "date": "2026-03-26",
+     "index": 10160.33
+    },
+    {
+     "date": "2026-03-29",
+     "index": 10060.68
+    },
+    {
+     "date": "2026-03-30",
+     "index": 10094.81
+    },
+    {
+     "date": "2026-03-31",
+     "index": 10188.47
+    },
+    {
+     "date": "2026-04-01",
+     "index": 10270.69
+    },
+    {
+     "date": "2026-04-02",
+     "index": 10227.18
+    },
+    {
+     "date": "2026-04-05",
+     "index": 10160.38
+    },
+    {
+     "date": "2026-04-06",
+     "index": 10346.22
+    },
+    {
+     "date": "2026-04-07",
+     "index": 10285.66
+    },
+    {
+     "date": "2026-04-08",
+     "index": 10662.33
+    },
+    {
+     "date": "2026-04-09",
+     "index": 10641.68
+    },
+    {
+     "date": "2026-04-12",
+     "index": 10629.8
+    },
+    {
+     "date": "2026-04-13",
+     "index": 10624.58
+    },
+    {
+     "date": "2026-04-14",
+     "index": 10690.77
+    },
+    {
+     "date": "2026-04-15",
+     "index": 10733.95
+    },
+    {
+     "date": "2026-04-16",
+     "index": 10714.65
+    },
+    {
+     "date": "2026-04-19",
+     "index": 10718.23
+    },
+    {
+     "date": "2026-04-20",
+     "index": 10672.2
+    },
+    {
+     "date": "2026-04-21",
+     "index": 10684.76
+    },
+    {
+     "date": "2026-04-22",
+     "index": 10677.64
+    },
+    {
+     "date": "2026-04-23",
+     "index": 10662.42
+    },
+    {
+     "date": "2026-04-26",
+     "index": 10668.05
+    },
+    {
+     "date": "2026-04-27",
+     "index": 10641.9
+    },
+    {
+     "date": "2026-04-28",
+     "index": 10622.63
+    },
+    {
+     "date": "2026-04-29",
+     "index": 10611.82
+    },
+    {
+     "date": "2026-04-30",
+     "index": 10487.91
+    },
+    {
+     "date": "2026-05-03",
+     "index": 10533.42
+    },
+    {
+     "date": "2026-05-04",
+     "index": 10564.57
+    },
+    {
+     "date": "2026-05-05",
+     "index": 10504.62
+    },
+    {
+     "date": "2026-05-06",
+     "index": 10649.25
+    },
+    {
+     "date": "2026-05-07",
+     "index": 10714.25
+    },
+    {
+     "date": "2026-05-10",
+     "index": 10663.5
+    },
+    {
+     "date": "2026-05-11",
+     "index": 10631.25
+    },
+    {
+     "date": "2026-05-12",
+     "index": 10523.92
+    },
+    {
+     "date": "2026-05-13",
+     "index": 10472.69
+    },
+    {
+     "date": "2026-05-14",
+     "index": 10493.27
+    },
+    {
+     "date": "2026-05-17",
+     "index": 10484.17
+    },
+    {
+     "date": "2026-05-18",
+     "index": 10372.1
+    },
+    {
+     "date": "2026-05-19",
+     "index": 10418.28
+    },
+    {
+     "date": "2026-05-20",
+     "index": 10352.7
+    },
+    {
+     "date": "2026-05-21",
+     "index": 10379.69
+    },
+    {
+     "date": "2026-05-24",
+     "index": 10706.7
+    },
+    {
+     "date": "2026-05-25",
+     "index": 10591.56
+    },
+    {
+     "date": "2026-05-31",
+     "index": 10554.96
+    },
+    {
+     "date": "2026-06-01",
+     "index": 10438.86
+    },
+    {
+     "date": "2026-06-02",
+     "index": 10407.45
+    },
+    {
+     "date": "2026-06-03",
+     "index": 10392.54
+    },
+    {
+     "date": "2026-06-04",
+     "index": 10335.86
+    },
+    {
+     "date": "2026-06-07",
+     "index": 10305.12
+    },
+    {
+     "date": "2026-06-08",
+     "index": 10092.04
+    },
+    {
+     "date": "2026-06-09",
+     "index": 10282.37
+    },
+    {
+     "date": "2026-06-10",
+     "index": 10289.32
+    },
+    {
+     "date": "2026-06-11",
+     "index": 10263.88
+    },
+    {
+     "date": "2026-06-14",
+     "index": 10461.0
+    },
+    {
+     "date": "2026-06-15",
+     "index": 10553.75
+    },
+    {
+     "date": "2026-06-16",
+     "index": 10551.42
+    },
+    {
+     "date": "2026-06-17",
+     "index": 10575.5
+    },
+    {
+     "date": "2026-06-18",
+     "index": 10510.92
+    },
+    {
+     "date": "2026-06-21",
+     "index": 10480.95
+    },
+    {
+     "date": "2026-06-22",
+     "index": 10446.04
+    },
+    {
+     "date": "2026-06-23",
+     "index": 10408.77
+    },
+    {
+     "date": "2026-06-24",
+     "index": 10321.23
+    },
+    {
+     "date": "2026-06-25",
+     "index": 10281.81
+    },
+    {
+     "date": "2026-06-28",
+     "index": 10293.72
+    },
+    {
+     "date": "2026-06-29",
+     "index": 10251.83
+    },
+    {
+     "date": "2026-06-30",
+     "index": 10241.75
+    },
+    {
+     "date": "2026-07-01",
+     "index": 10290.82
+    },
+    {
+     "date": "2026-07-02",
+     "index": 10211.16
+    },
+    {
+     "date": "2026-07-05",
+     "index": 10246.22
+    },
+    {
+     "date": "2026-07-06",
+     "index": 10267.16
+    },
+    {
+     "date": "2026-07-07",
+     "index": 10254.6
+    },
+    {
+     "date": "2026-07-08",
+     "index": 10176.15
+    },
+    {
+     "date": "2026-07-09",
+     "index": 10090.57
+    },
+    {
+     "date": "2026-07-12",
+     "index": 10103.22
+    },
+    {
+     "date": "2026-07-19",
+     "index": 9954.84
+    },
+    {
+     "date": "2026-07-20",
+     "index": 10083.79
+    },
+    {
+     "date": "2026-07-21",
+     "index": 10107.36
+    },
+    {
+     "date": "2026-07-22",
+     "index": 10066.51
+    },
+    {
+     "date": "2026-07-23",
+     "index": 10032.48
+    },
+    {
+     "date": "2026-07-26",
+     "index": 10003.67
+    },
+    {
+     "date": "2026-07-27",
+     "index": 10085.39
+    },
+    {
+     "date": "2026-07-28",
+     "index": 10022.69
+    },
+    {
+     "date": "2026-07-29",
+     "index": 10006.91
+    },
+    {
+     "date": "2026-07-30",
+     "index": 9920.69
+    },
+    {
+     "date": "2026-08-02",
+     "index": 10050.74
+    },
+    {
+     "date": "2026-08-03",
+     "index": 10133.67
+    },
+    {
+     "date": "2026-08-04",
+     "index": 10092.58
+    },
+    {
+     "date": "2026-08-05",
+     "index": 10181.82
+    },
+    {
+     "date": "2026-08-06",
+     "index": 10112.25
+    },
+    {
+     "date": "2026-08-09",
+     "index": 10100.11
+    },
+    {
+     "date": "2026-08-10",
+     "index": 10097.44
+    },
+    {
+     "date": "2026-08-11",
+     "index": 10018.06
+    },
+    {
+     "date": "2026-08-12",
+     "index": 10055.6
+    },
+    {
+     "date": "2026-08-13",
+     "index": 10020.84
+    }
+   ]
+  },
+  "monthly": {
+   "period": {
+    "kind": "monthly",
+    "tab": "Monthly",
+    "label": "July 2026",
+    "path": "2026/07",
+    "start": "2026-07-01",
+    "end": "2026-07-30",
+    "sessions": 18
+   },
+   "share": {
+    "open": 4.455,
+    "high": 4.455,
+    "low": 4.004,
+    "close": 4.22,
+    "previousClose": 4.42,
+    "changeValue": -0.2,
+    "changePct": -4.525,
+    "volume": 49360361,
+    "value": 209929665.25,
+    "trades": 9234,
+    "high52": 4.445,
+    "low52": 3.435,
+    "oneYearChangePct": 20.952,
+    "oneYearAgo": {
+     "date": "2025-07-30",
+     "close": 3.489
+    },
+    "priceToBook": 3.624,
+    "bookValuePerShare": 1.1646,
+    "priceToBookIsApproximate": true,
+    "dividendYieldPct": 0.0,
+    "cashDividend": 0.0,
+    "eps": 0.25,
+    "peRatio": 16.77,
+    "sharesOutstanding": 4493329500,
+    "marketCap": 18961850490.0,
+    "capRankMarket": 7,
+    "capRankMarketOf": 54,
+    "capRankSector": 2,
+    "capRankSectorOf": 10
+   },
+   "index": {
+    "name": "QE Index",
+    "indexValue": 9920.69,
+    "changeValue": -321.06,
+    "changePct": -3.13,
+    "volume": 2301948933,
+    "tradedValue": 5827150633.72,
+    "trades": 439640,
+    "mainVolume": 2301591550,
+    "mainValue": 5826419072.405,
+    "ventureVolume": 357383,
+    "ventureValue": 731561.315,
+    "tradedStocks": 54,
+    "gainers": 8,
+    "losers": 45,
+    "marketCap": 594182157083.606,
+    "high52": 11648.81,
+    "low52": 9920.69,
+    "pctFromHigh52": -14.84,
+    "pctFromLow52": 0.0,
+    "window": {
+     "weeks": 52,
+     "sessions": 247,
+     "basis": "daily closes from MarketSummary.INDEX_VALUE"
+    }
+   },
+   "comparison": [
+    {
+     "label": "Estithmar Holding Share",
+     "changePct": -4.525
+    },
+    {
+     "label": "QE Index",
+     "changePct": -3.13
+    },
+    {
+     "label": "Industrials Index",
+     "changePct": -4.46
+    }
+   ],
+   "sectorIndices": [
+    {
+     "code": "QBNK",
+     "name": "Banks&Financial Services",
+     "value": 4966.64,
+     "changeValue": -133.78,
+     "changePct": -2.62
+    },
+    {
+     "code": "QCON",
+     "name": "Consumer Goods&Services",
+     "value": 7941.37,
+     "changeValue": -238.17,
+     "changePct": -2.91
+    },
+    {
+     "code": "QIND",
+     "name": "Industrials",
+     "value": 3942.11,
+     "changeValue": -184.21,
+     "changePct": -4.46
+    },
+    {
+     "code": "QINS",
+     "name": "Insurance",
+     "value": 2655.42,
+     "changeValue": -54.83,
+     "changePct": -2.02
+    },
+    {
+     "code": "QREA",
+     "name": "Real Estate",
+     "value": 1404.7,
+     "changeValue": -57.25,
+     "changePct": -3.92
+    },
+    {
+     "code": "QTLC",
+     "name": "Telecoms",
+     "value": 2307.77,
+     "changeValue": -121.23,
+     "changePct": -4.99
+    },
+    {
+     "code": "QTRN",
+     "name": "Transportation",
+     "value": 5172.91,
+     "changeValue": -173.39,
+     "changePct": -3.24
+    }
+   ],
+   "allIndices": [
+    {
+     "code": "GNRI",
+     "name": "General Index",
+     "value": 9920.69,
+     "changeValue": -321.06,
+     "changePct": -3.13
+    },
+    {
+     "code": "QETR",
+     "name": "QE Total Return Index",
+     "value": 24515.29,
+     "changeValue": -793.37,
+     "changePct": -3.13
+    },
+    {
+     "code": "QERP",
+     "name": "QE Al Rayan Islamic Index - Price",
+     "value": 2155.54,
+     "changeValue": -76.5,
+     "changePct": -3.43
+    },
+    {
+     "code": "QERI",
+     "name": "QE Al Rayan Islamic Index",
+     "value": 4983.2,
+     "changeValue": -176.87,
+     "changePct": -3.43
+    },
+    {
+     "code": "QEAS",
+     "name": "QE All Share Index",
+     "value": 3884.03,
+     "changeValue": -128.86,
+     "changePct": -3.21
+    },
+    {
+     "code": "QBNK",
+     "name": "All Share Banks&Financial Services Index",
+     "value": 4966.64,
+     "changeValue": -133.78,
+     "changePct": -2.62
+    },
+    {
+     "code": "QCON",
+     "name": "All Share Consumer Goods&Services Index",
+     "value": 7941.37,
+     "changeValue": -238.17,
+     "changePct": -2.91
+    },
+    {
+     "code": "QIND",
+     "name": "All Share Industrials Index",
+     "value": 3942.11,
+     "changeValue": -184.21,
+     "changePct": -4.46
+    },
+    {
+     "code": "QINS",
+     "name": "All Share Insurance Index",
+     "value": 2655.42,
+     "changeValue": -54.83,
+     "changePct": -2.02
+    },
+    {
+     "code": "QREA",
+     "name": "All Share Real Estate Index",
+     "value": 1404.7,
+     "changeValue": -57.25,
+     "changePct": -3.92
+    },
+    {
+     "code": "QTLC",
+     "name": "All Share Telecoms Index",
+     "value": 2307.77,
+     "changeValue": -121.23,
+     "changePct": -4.99
+    },
+    {
+     "code": "QTRN",
+     "name": "All Share Transportation Index",
+     "value": 5172.91,
+     "changeValue": -173.39,
+     "changePct": -3.24
+    }
+   ],
+   "topGainers": [
+    {
+     "symbol": "QGRI",
+     "name": "General Insurance",
+     "nameAr": "العامة",
+     "close": 2.051,
+     "changePct": 14.008
+    },
+    {
+     "symbol": "QIMD",
+     "name": "Ind. Manf. Co.",
+     "nameAr": "التحويلية",
+     "close": 2.179,
+     "changePct": 6.396
+    },
+    {
+     "symbol": "QEWS",
+     "name": "Nebras Energy",
+     "nameAr": "نبراس للطاقة",
+     "close": 14.78,
+     "changePct": 3.284
+    },
+    {
+     "symbol": "DBIS",
+     "name": "Dlala",
+     "nameAr": "دلالة",
+     "close": 1.522,
+     "changePct": 2.907
+    },
+    {
+     "symbol": "NLCS",
+     "name": "National Leasing",
+     "nameAr": "الاجارة",
+     "close": 0.68,
+     "changePct": 2.256
+    }
+   ],
+   "topLosers": [
+    {
+     "symbol": "GISS",
+     "name": "Gulf International",
+     "nameAr": "الخليج الدولية",
+     "close": 1.82,
+     "changePct": -14.634
+    },
+    {
+     "symbol": "QAMC",
+     "name": "QAMCO",
+     "nameAr": "قامكو",
+     "close": 1.42,
+     "changePct": -13.835
+    },
+    {
+     "symbol": "AHCS",
+     "name": "Aamal",
+     "nameAr": "أعمال",
+     "close": 0.703,
+     "changePct": -9.872
+    },
+    {
+     "symbol": "QGMD",
+     "name": "Qatar German Co. Med",
+     "nameAr": "الطبية",
+     "close": 1.257,
+     "changePct": -9.633
+    },
+    {
+     "symbol": "MCCS",
+     "name": "Mannai Corp.",
+     "nameAr": "مجمع المناعي",
+     "close": 4.88,
+     "changePct": -9.63
+    }
+   ],
+   "topByValue": [
+    {
+     "symbol": "QNBK",
+     "name": "QNB",
+     "nameAr": "QNB",
+     "close": 16.57,
+     "tradedValue": 635907671.52
+    },
+    {
+     "symbol": "ORDS",
+     "name": "Ooredoo",
+     "nameAr": "Ooredoo",
+     "close": 12.5,
+     "tradedValue": 373289798.88
+    },
+    {
+     "symbol": "MARK",
+     "name": "Rayan",
+     "nameAr": "الريان",
+     "close": 1.99,
+     "tradedValue": 346662142.86
+    },
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.228,
+     "tradedValue": 339274346.188
+    },
+    {
+     "symbol": "QIBK",
+     "name": "Qatar Islamic Bank",
+     "nameAr": "المصرف",
+     "close": 21.66,
+     "tradedValue": 327886806.68
+    }
+   ],
+   "topByVolume": [
+    {
+     "symbol": "BLDN",
+     "name": "Baladna",
+     "nameAr": "بلدنا",
+     "close": 1.228,
+     "tradedVolume": 261882619.0
+    },
+    {
+     "symbol": "MARK",
+     "name": "Rayan",
+     "nameAr": "الريان",
+     "close": 1.99,
+     "tradedVolume": 173058651.0
+    },
+    {
+     "symbol": "MRDS",
+     "name": "Mazaya",
+     "nameAr": "مزايا",
+     "close": 0.55,
+     "tradedVolume": 160458737.0
+    },
+    {
+     "symbol": "MPHC",
+     "name": "Mesaieed",
+     "nameAr": "مسيعيد",
+     "close": 1.094,
+     "tradedVolume": 147659667.0
+    },
+    {
+     "symbol": "ERES",
+     "name": "Ezdan Holding",
+     "nameAr": "إزدان القابضة",
+     "close": 0.81,
+     "tradedVolume": 145599320.0
+    }
+   ],
+   "shareholderActivity": [
+    {
+     "nationality": "Qatari",
+     "code": "QTR",
+     "totalBuyPct": 64.645,
+     "totalSellPct": 60.138,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 54,
+       "tradedValue": 1721908928.707,
+       "tradedVolume": 895324528,
+       "tradedValuePct": 29.553
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 54,
+       "tradedValue": 1687110497.85,
+       "tradedVolume": 890170318,
+       "tradedValuePct": 28.956
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 51,
+       "tradedValue": 2044631925.946,
+       "tradedVolume": 765516768,
+       "tradedValuePct": 35.092
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 49,
+       "tradedValue": 1816767938.753,
+       "tradedVolume": 709386868,
+       "tradedValuePct": 31.182
+      }
+     ]
+    },
+    {
+     "nationality": "GCC",
+     "code": "GCC",
+     "totalBuyPct": 2.7110000000000003,
+     "totalSellPct": 3.1580000000000004,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 51,
+       "tradedValue": 32719284.74,
+       "tradedVolume": 17954282,
+       "tradedValuePct": 0.562
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 44,
+       "tradedValue": 24846417.052,
+       "tradedVolume": 14133959,
+       "tradedValuePct": 0.426
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 30,
+       "tradedValue": 125204069.577,
+       "tradedVolume": 21989111,
+       "tradedValuePct": 2.149
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 29,
+       "tradedValue": 159195953.087,
+       "tradedVolume": 33762217,
+       "tradedValuePct": 2.732
+      }
+     ]
+    },
+    {
+     "nationality": "Arab",
+     "code": "ARB",
+     "totalBuyPct": 8.507,
+     "totalSellPct": 8.712,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 53,
+       "tradedValue": 493600787.858,
+       "tradedVolume": 293445694,
+       "tradedValuePct": 8.472
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 54,
+       "tradedValue": 507621261.203,
+       "tradedVolume": 285316993,
+       "tradedValuePct": 8.712
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 3,
+       "tradedValue": 2054415.0,
+       "tradedVolume": 140000,
+       "tradedValuePct": 0.035
+      }
+     ]
+    },
+    {
+     "nationality": "Foreigners",
+     "code": "FRN",
+     "totalBuyPct": 24.137,
+     "totalSellPct": 27.991,
+     "rows": [
+      {
+       "investorType": "Individuals",
+       "tradeType": "Buy",
+       "companies": 54,
+       "tradedValue": 140654796.101,
+       "tradedVolume": 71471791,
+       "tradedValuePct": 2.414
+      },
+      {
+       "investorType": "Individuals",
+       "tradeType": "Sell",
+       "companies": 52,
+       "tradedValue": 137854168.148,
+       "tradedVolume": 70011590,
+       "tradedValuePct": 2.366
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Buy",
+       "companies": 51,
+       "tradedValue": 1265644864.476,
+       "tradedVolume": 235749376,
+       "tradedValuePct": 21.723
+      },
+      {
+       "investorType": "Institutions",
+       "tradeType": "Sell",
+       "companies": 52,
+       "tradedValue": 1493022836.312,
+       "tradedVolume": 298809605,
+       "tradedValuePct": 25.625
+      }
+     ]
+    }
+   ],
+   "ownership": {
+    "current": {
+     "byNationality": {
+      "Qatari": 95.361,
+      "GCC": 0.282,
+      "Foreigners": 3.615,
+      "Arab": 0.743
+     },
+     "institutionsPct": 29.417,
+     "individualsPct": 70.584,
+     "detail": [
+      {
+       "nationality": "Qatari",
+       "investorType": "Individuals",
+       "holders": 3817,
+       "shares": 3113269639,
+       "pct": 69.286
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Institutions",
+       "holders": 69,
+       "shares": 1171617576,
+       "pct": 26.075
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Individuals",
+       "holders": 25,
+       "shares": 1331989,
+       "pct": 0.03
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Institutions",
+       "holders": 14,
+       "shares": 11314137,
+       "pct": 0.252
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Individuals",
+       "holders": 180,
+       "shares": 23589231,
+       "pct": 0.525
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Institutions",
+       "holders": 145,
+       "shares": 138823287,
+       "pct": 3.09
+      },
+      {
+       "nationality": "Arab",
+       "investorType": "Individuals",
+       "holders": 245,
+       "shares": 33383641,
+       "pct": 0.743
+      }
+     ]
+    },
+    "previous": {
+     "byNationality": {
+      "Arab": 0.788,
+      "GCC": 0.283,
+      "Qatari": 95.255,
+      "Foreigners": 3.673
+     },
+     "institutionsPct": 29.557,
+     "individualsPct": 70.442,
+     "detail": [
+      {
+       "nationality": "Arab",
+       "investorType": "Individuals",
+       "holders": 243,
+       "shares": 35409744,
+       "pct": 0.788
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Institutions",
+       "holders": 14,
+       "shares": 11329477,
+       "pct": 0.252
+      },
+      {
+       "nationality": "GCC",
+       "investorType": "Individuals",
+       "holders": 24,
+       "shares": 1393146,
+       "pct": 0.031
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Institutions",
+       "holders": 68,
+       "shares": 1175248644,
+       "pct": 26.155
+      },
+      {
+       "nationality": "Qatari",
+       "investorType": "Individuals",
+       "holders": 3814,
+       "shares": 3104897657,
+       "pct": 69.1
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Individuals",
+       "holders": 174,
+       "shares": 23498378,
+       "pct": 0.523
+      },
+      {
+       "nationality": "Foreigners",
+       "investorType": "Institutions",
+       "holders": 145,
+       "shares": 141552454,
+       "pct": 3.15
+      }
+     ]
+    },
+    "currentDate": "2026-07-30",
+    "previousDate": "2026-06-30"
+   },
+   "insiderTrades": [
+    {
+     "symbol": "BEMA",
+     "company": "Beema",
+     "insider": "مصرف قطر الاسلامى",
+     "buy": 0,
+     "sell": 27500000,
+     "sessions": 1
+    },
+    {
+     "symbol": "BEMA",
+     "company": "Beema",
+     "insider": "شركه قطر للتامين",
+     "buy": 0,
+     "sell": 27500000,
+     "sessions": 1
+    },
+    {
+     "symbol": "FALH",
+     "company": "Faleh",
+     "insider": "الشيخة عائشة فالح ناصر احمد آل ثاني",
+     "buy": 0,
+     "sell": 1800000,
+     "sessions": 1
+    },
+    {
+     "symbol": "QFBQ",
+     "company": "Lesha Bank (QFC)",
+     "insider": "مشعل محمد عبد الله زيد آل محمود",
+     "buy": 0,
+     "sell": 563096,
+     "sessions": 2
+    },
+    {
+     "symbol": "QFBQ",
+     "company": "Lesha Bank (QFC)",
+     "insider": "الشيخ فيصل ثاني فيصل ثاني آل ثاني*",
+     "buy": 420274,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "QNNS",
+     "company": "Qatar Navigation",
+     "insider": "Mohammed Ebrahim M B Al-Suliaiti",
+     "buy": 0,
+     "sell": 400000,
+     "sessions": 3
+    },
+    {
+     "symbol": "QATI",
+     "company": "Qatar Insurance",
+     "insider": "محمد جاسم محمد ابراهيم جيده",
+     "buy": 0,
+     "sell": 300000,
+     "sessions": 1
+    },
+    {
+     "symbol": "MARK",
+     "company": "Rayan",
+     "insider": "شركة/ جي اس القابضة",
+     "buy": 300000,
+     "sell": 0,
+     "sessions": 5
+    },
+    {
+     "symbol": "VFQS",
+     "company": "Vodafone Qatar",
+     "insider": "سلمان بافا كنتبي",
+     "buy": 280269,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "AKHI",
+     "company": "Alkhaleej Takaful",
+     "insider": "الشيخ / تميم بن فهد محمد جبر آل ثاني",
+     "buy": 0,
+     "sell": 250000,
+     "sessions": 1
+    },
+    {
+     "symbol": "VFQS",
+     "company": "Vodafone Qatar",
+     "insider": "مسرور أنجوم",
+     "buy": 200000,
+     "sell": 0,
+     "sessions": 1
+    },
+    {
+     "symbol": "SIIS",
+     "company": "Salam International",
+     "insider": "بسام عبدالسلام محمد ابوعيسى",
+     "buy": 0,
+     "sell": 124547,
+     "sessions": 2
+    },
+    {
+     "symbol": "ABQK",
+     "company": "Ahli Bank",
+     "insider": "شركة فخرو القابضة",
+     "buy": 85153,
+     "sell": 0,
+     "sessions": 6
+    },
+    {
+     "symbol": "MERS",
+     "company": "Al Meera",
+     "insider": "فخرو القابضه ذ.م .م",
+     "buy": 65000,
+     "sell": 0,
+     "sessions": 3
+    },
+    {
+     "symbol": "ZHCD",
+     "company": "Zad Holding Company",
+     "insider": "اللاينس انفيسمنت",
+     "buy": 0,
+     "sell": 59265,
+     "sessions": 5
+    },
+    {
+     "symbol": "MARK",
+     "company": "Rayan",
+     "insider": "وزارة الدفاع – القوات المسلحة القطرية (برزان القابضة)",
+     "buy": 0,
+     "sell": 55025,
+     "sessions": 2
+    },
+    {
+     "symbol": "VFQS",
+     "company": "Vodafone Qatar",
+     "insider": "باران يورداغول",
+     "buy": 50623,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "MRDS",
+     "company": "Mazaya",
+     "insider": "الشيخ تميم بن فهد بن محمد بن جبر آل ثاني",
+     "buy": 50000,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "QATI",
+     "company": "Qatar Insurance",
+     "insider": "شركة الفردان للاستثمار",
+     "buy": 40000,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "MCCS",
+     "company": "Mannai Corp.",
+     "insider": "مبارك يوسف مبارك الجهام الكواري",
+     "buy": 27000,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "MERS",
+     "company": "Al Meera",
+     "insider": "طارق عبداللطيف حسن محمد الجابر",
+     "buy": 0,
+     "sell": 25040,
+     "sessions": 1
+    },
+    {
+     "symbol": "QFBQ",
+     "company": "Lesha Bank (QFC)",
+     "insider": "عيسى محمد عيسى الحسن المهندي",
+     "buy": 0,
+     "sell": 25000,
+     "sessions": 1
+    },
+    {
+     "symbol": "ZHCD",
+     "company": "Zad Holding Company",
+     "insider": "منصور محمد جبر محمد آل ثاني",
+     "buy": 21027,
+     "sell": 0,
+     "sessions": 6
+    },
+    {
+     "symbol": "VFQS",
+     "company": "Vodafone Qatar",
+     "insider": "ساقب سهيل",
+     "buy": 16000,
+     "sell": 0,
+     "sessions": 2
+    },
+    {
+     "symbol": "MPHC",
+     "company": "Mesaieed",
+     "insider": "Bedour Othman Al-Amoudi",
+     "buy": 0,
+     "sell": 9657,
+     "sessions": 2
+    },
+    {
+     "symbol": "TQES",
+     "company": "Techno Q",
+     "insider": "طارق محمد ابراهيم الجيده",
+     "buy": 0,
+     "sell": 7053,
+     "sessions": 1
+    },
+    {
+     "symbol": "CBQK",
+     "company": "Comm. Bank of Qatar",
+     "insider": "Raheel Siddiqui",
+     "buy": 2000,
+     "sell": 0,
+     "sessions": 1
+    },
+    {
+     "symbol": "IQCD",
+     "company": "Industries Qatar",
+     "insider": "Hamad Abdulla Al-Muftah",
+     "buy": 0,
+     "sell": 1000,
+     "sessions": 1
+    },
+    {
+     "symbol": "ORDS",
+     "company": "Ooredoo",
+     "insider": "Nasser Mohd Marafih",
+     "buy": 248,
+     "sell": 0,
+     "sessions": 1
+    }
+   ],
+   "indexSeries": [
+    {
+     "date": "2025-07-31",
+     "index": 11261.62
+    },
+    {
+     "date": "2025-08-03",
+     "index": 11167.75
+    },
+    {
+     "date": "2025-08-04",
+     "index": 11179.72
+    },
+    {
+     "date": "2025-08-05",
+     "index": 11284.11
+    },
+    {
+     "date": "2025-08-06",
+     "index": 11325.92
+    },
+    {
+     "date": "2025-08-07",
+     "index": 11363.71
+    },
+    {
+     "date": "2025-08-10",
+     "index": 11362.43
+    },
+    {
+     "date": "2025-08-11",
+     "index": 11371.49
+    },
+    {
+     "date": "2025-08-12",
+     "index": 11421.38
+    },
+    {
+     "date": "2025-08-13",
+     "index": 11634.75
+    },
+    {
+     "date": "2025-08-14",
+     "index": 11648.81
+    },
+    {
+     "date": "2025-08-17",
+     "index": 11588.02
+    },
+    {
+     "date": "2025-08-18",
+     "index": 11515.66
+    },
+    {
+     "date": "2025-08-19",
+     "index": 11491.59
+    },
+    {
+     "date": "2025-08-20",
+     "index": 11306.78
+    },
+    {
+     "date": "2025-08-21",
+     "index": 11342.57
+    },
+    {
+     "date": "2025-08-24",
+     "index": 11322.64
+    },
+    {
+     "date": "2025-08-25",
+     "index": 11293.42
+    },
+    {
+     "date": "2025-08-26",
+     "index": 11405.5
+    },
+    {
+     "date": "2025-08-27",
+     "index": 11338.81
+    },
+    {
+     "date": "2025-08-28",
+     "index": 11226.84
+    },
+    {
+     "date": "2025-08-31",
+     "index": 11222.38
+    },
+    {
+     "date": "2025-09-01",
+     "index": 11175.48
+    },
+    {
+     "date": "2025-09-02",
+     "index": 11183.57
+    },
+    {
+     "date": "2025-09-03",
+     "index": 11142.37
+    },
+    {
+     "date": "2025-09-04",
+     "index": 11099.21
+    },
+    {
+     "date": "2025-09-07",
+     "index": 11131.43
+    },
+    {
+     "date": "2025-09-08",
+     "index": 11124.83
+    },
+    {
+     "date": "2025-09-09",
+     "index": 11107.45
+    },
+    {
+     "date": "2025-09-10",
+     "index": 11077.07
+    },
+    {
+     "date": "2025-09-11",
+     "index": 11093.12
+    },
+    {
+     "date": "2025-09-14",
+     "index": 11131.75
+    },
+    {
+     "date": "2025-09-15",
+     "index": 11099.97
+    },
+    {
+     "date": "2025-09-16",
+     "index": 11121.58
+    },
+    {
+     "date": "2025-09-17",
+     "index": 11226.03
+    },
+    {
+     "date": "2025-09-18",
+     "index": 11307.85
+    },
+    {
+     "date": "2025-09-21",
+     "index": 11266.82
+    },
+    {
+     "date": "2025-09-22",
+     "index": 11222.06
+    },
+    {
+     "date": "2025-09-23",
+     "index": 11174.88
+    },
+    {
+     "date": "2025-09-24",
+     "index": 11078.5
+    },
+    {
+     "date": "2025-09-25",
+     "index": 10958.55
+    },
+    {
+     "date": "2025-09-28",
+     "index": 10977.66
+    },
+    {
+     "date": "2025-09-29",
+     "index": 11001.88
+    },
+    {
+     "date": "2025-09-30",
+     "index": 11052.82
+    },
+    {
+     "date": "2025-10-01",
+     "index": 10955.26
+    },
+    {
+     "date": "2025-10-02",
+     "index": 10863.09
+    },
+    {
+     "date": "2025-10-05",
+     "index": 10915.73
+    },
+    {
+     "date": "2025-10-06",
+     "index": 10888.55
+    },
+    {
+     "date": "2025-10-07",
+     "index": 10911.53
+    },
+    {
+     "date": "2025-10-08",
+     "index": 10897.38
+    },
+    {
+     "date": "2025-10-09",
+     "index": 10933.22
+    },
+    {
+     "date": "2025-10-12",
+     "index": 10839.72
+    },
+    {
+     "date": "2025-10-13",
+     "index": 10835.95
+    },
+    {
+     "date": "2025-10-14",
+     "index": 10745.92
+    },
+    {
+     "date": "2025-10-15",
+     "index": 10693.47
+    },
+    {
+     "date": "2025-10-16",
+     "index": 10850.91
+    },
+    {
+     "date": "2025-10-19",
+     "index": 10837.18
+    },
+    {
+     "date": "2025-10-20",
+     "index": 10808.5
+    },
+    {
+     "date": "2025-10-21",
+     "index": 10821.85
+    },
+    {
+     "date": "2025-10-22",
+     "index": 10850.33
+    },
+    {
+     "date": "2025-10-23",
+     "index": 10877.05
+    },
+    {
+     "date": "2025-10-26",
+     "index": 10912.14
+    },
+    {
+     "date": "2025-10-27",
+     "index": 10896.08
+    },
+    {
+     "date": "2025-10-28",
+     "index": 10924.78
+    },
+    {
+     "date": "2025-10-29",
+     "index": 10928.23
+    },
+    {
+     "date": "2025-10-30",
+     "index": 10956.78
+    },
+    {
+     "date": "2025-11-02",
+     "index": 10930.3
+    },
+    {
+     "date": "2025-11-03",
+     "index": 11027.56
+    },
+    {
+     "date": "2025-11-04",
+     "index": 11027.54
+    },
+    {
+     "date": "2025-11-05",
+     "index": 11006.6
+    },
+    {
+     "date": "2025-11-06",
+     "index": 11058.92
+    },
+    {
+     "date": "2025-11-09",
+     "index": 11047.84
+    },
+    {
+     "date": "2025-11-10",
+     "index": 11089.98
+    },
+    {
+     "date": "2025-11-11",
+     "index": 11140.77
+    },
+    {
+     "date": "2025-11-12",
+     "index": 11082.4
+    },
+    {
+     "date": "2025-11-13",
+     "index": 10957.95
+    },
+    {
+     "date": "2025-11-16",
+     "index": 10846.84
+    },
+    {
+     "date": "2025-11-17",
+     "index": 10800.54
+    },
+    {
+     "date": "2025-11-18",
+     "index": 10682.52
+    },
+    {
+     "date": "2025-11-19",
+     "index": 10751.11
+    },
+    {
+     "date": "2025-11-20",
+     "index": 10607.96
+    },
+    {
+     "date": "2025-11-23",
+     "index": 10653.13
+    },
+    {
+     "date": "2025-11-24",
+     "index": 10699.94
+    },
+    {
+     "date": "2025-11-25",
+     "index": 10607.42
+    },
+    {
+     "date": "2025-11-26",
+     "index": 10689.4
+    },
+    {
+     "date": "2025-11-27",
+     "index": 10644.73
+    },
+    {
+     "date": "2025-11-30",
+     "index": 10615.07
+    },
+    {
+     "date": "2025-12-01",
+     "index": 10621.19
+    },
+    {
+     "date": "2025-12-02",
+     "index": 10674.06
+    },
+    {
+     "date": "2025-12-03",
+     "index": 10723.46
+    },
+    {
+     "date": "2025-12-04",
+     "index": 10712.82
+    },
+    {
+     "date": "2025-12-07",
+     "index": 10704.4
+    },
+    {
+     "date": "2025-12-08",
+     "index": 10736.47
+    },
+    {
+     "date": "2025-12-09",
+     "index": 10777.39
+    },
+    {
+     "date": "2025-12-10",
+     "index": 10807.47
+    },
+    {
+     "date": "2025-12-11",
+     "index": 10903.17
+    },
+    {
+     "date": "2025-12-14",
+     "index": 10854.95
+    },
+    {
+     "date": "2025-12-15",
+     "index": 10757.96
+    },
+    {
+     "date": "2025-12-16",
+     "index": 10726.68
+    },
+    {
+     "date": "2025-12-17",
+     "index": 10654.65
+    },
+    {
+     "date": "2025-12-21",
+     "index": 10716.39
+    },
+    {
+     "date": "2025-12-22",
+     "index": 10801.39
+    },
+    {
+     "date": "2025-12-23",
+     "index": 10823.86
+    },
+    {
+     "date": "2025-12-24",
+     "index": 10837.61
+    },
+    {
+     "date": "2025-12-25",
+     "index": 10801.22
+    },
+    {
+     "date": "2025-12-28",
+     "index": 10763.27
+    },
+    {
+     "date": "2025-12-29",
+     "index": 10798.14
+    },
+    {
+     "date": "2025-12-30",
+     "index": 10793.58
+    },
+    {
+     "date": "2025-12-31",
+     "index": 10762.51
+    },
+    {
+     "date": "2026-01-04",
+     "index": 10785.36
+    },
+    {
+     "date": "2026-01-05",
+     "index": 10967.86
+    },
+    {
+     "date": "2026-01-06",
+     "index": 10989.53
+    },
+    {
+     "date": "2026-01-07",
+     "index": 11061.78
+    },
+    {
+     "date": "2026-01-08",
+     "index": 10969.33
+    },
+    {
+     "date": "2026-01-11",
+     "index": 11088.79
+    },
+    {
+     "date": "2026-01-12",
+     "index": 11162.54
+    },
+    {
+     "date": "2026-01-13",
+     "index": 11229.22
+    },
+    {
+     "date": "2026-01-14",
+     "index": 11210.66
+    },
+    {
+     "date": "2026-01-15",
+     "index": 11067.64
+    },
+    {
+     "date": "2026-01-18",
+     "index": 11124.98
+    },
+    {
+     "date": "2026-01-19",
+     "index": 11204.69
+    },
+    {
+     "date": "2026-01-20",
+     "index": 11220.22
+    },
+    {
+     "date": "2026-01-21",
+     "index": 11216.7
+    },
+    {
+     "date": "2026-01-22",
+     "index": 11336.59
+    },
+    {
+     "date": "2026-01-25",
+     "index": 11186.78
+    },
+    {
+     "date": "2026-01-26",
+     "index": 11322.05
+    },
+    {
+     "date": "2026-01-27",
+     "index": 11285.13
+    },
+    {
+     "date": "2026-01-28",
+     "index": 11373.09
+    },
+    {
+     "date": "2026-01-29",
+     "index": 11310.38
+    },
+    {
+     "date": "2026-02-01",
+     "index": 11340.3
+    },
+    {
+     "date": "2026-02-02",
+     "index": 11405.01
+    },
+    {
+     "date": "2026-02-03",
+     "index": 11420.88
+    },
+    {
+     "date": "2026-02-04",
+     "index": 11384.88
+    },
+    {
+     "date": "2026-02-05",
+     "index": 11355.36
+    },
+    {
+     "date": "2026-02-08",
+     "index": 11415.01
+    },
+    {
+     "date": "2026-02-09",
+     "index": 11502.01
+    },
+    {
+     "date": "2026-02-11",
+     "index": 11502.99
+    },
+    {
+     "date": "2026-02-12",
+     "index": 11515.81
+    },
+    {
+     "date": "2026-02-15",
+     "index": 11468.9
+    },
+    {
+     "date": "2026-02-16",
+     "index": 11426.59
+    },
+    {
+     "date": "2026-02-17",
+     "index": 11362.59
+    },
+    {
+     "date": "2026-02-18",
+     "index": 11389.02
+    },
+    {
+     "date": "2026-02-19",
+     "index": 11229.06
+    },
+    {
+     "date": "2026-02-22",
+     "index": 11161.42
+    },
+    {
+     "date": "2026-02-23",
+     "index": 11282.24
+    },
+    {
+     "date": "2026-02-24",
+     "index": 11289.75
+    },
+    {
+     "date": "2026-02-25",
+     "index": 11270.62
+    },
+    {
+     "date": "2026-02-26",
+     "index": 11055.18
+    },
+    {
+     "date": "2026-03-02",
+     "index": 10581.03
+    },
+    {
+     "date": "2026-03-03",
+     "index": 10509.82
+    },
+    {
+     "date": "2026-03-04",
+     "index": 10588.86
+    },
+    {
+     "date": "2026-03-05",
+     "index": 10699.28
+    },
+    {
+     "date": "2026-03-08",
+     "index": 10687.57
+    },
+    {
+     "date": "2026-03-09",
+     "index": 10410.16
+    },
+    {
+     "date": "2026-03-10",
+     "index": 10670.23
+    },
+    {
+     "date": "2026-03-11",
+     "index": 10577.25
+    },
+    {
+     "date": "2026-03-12",
+     "index": 10485.94
+    },
+    {
+     "date": "2026-03-15",
+     "index": 10461.0
+    },
+    {
+     "date": "2026-03-16",
+     "index": 10333.32
+    },
+    {
+     "date": "2026-03-17",
+     "index": 10393.29
+    },
+    {
+     "date": "2026-03-18",
+     "index": 10292.16
+    },
+    {
+     "date": "2026-03-24",
+     "index": 10150.7
+    },
+    {
+     "date": "2026-03-25",
+     "index": 10290.29
+    },
+    {
+     "date": "2026-03-26",
+     "index": 10160.33
+    },
+    {
+     "date": "2026-03-29",
+     "index": 10060.68
+    },
+    {
+     "date": "2026-03-30",
+     "index": 10094.81
+    },
+    {
+     "date": "2026-03-31",
+     "index": 10188.47
+    },
+    {
+     "date": "2026-04-01",
+     "index": 10270.69
+    },
+    {
+     "date": "2026-04-02",
+     "index": 10227.18
+    },
+    {
+     "date": "2026-04-05",
+     "index": 10160.38
+    },
+    {
+     "date": "2026-04-06",
+     "index": 10346.22
+    },
+    {
+     "date": "2026-04-07",
+     "index": 10285.66
+    },
+    {
+     "date": "2026-04-08",
+     "index": 10662.33
+    },
+    {
+     "date": "2026-04-09",
+     "index": 10641.68
+    },
+    {
+     "date": "2026-04-12",
+     "index": 10629.8
+    },
+    {
+     "date": "2026-04-13",
+     "index": 10624.58
+    },
+    {
+     "date": "2026-04-14",
+     "index": 10690.77
+    },
+    {
+     "date": "2026-04-15",
+     "index": 10733.95
+    },
+    {
+     "date": "2026-04-16",
+     "index": 10714.65
+    },
+    {
+     "date": "2026-04-19",
+     "index": 10718.23
+    },
+    {
+     "date": "2026-04-20",
+     "index": 10672.2
+    },
+    {
+     "date": "2026-04-21",
+     "index": 10684.76
+    },
+    {
+     "date": "2026-04-22",
+     "index": 10677.64
+    },
+    {
+     "date": "2026-04-23",
+     "index": 10662.42
+    },
+    {
+     "date": "2026-04-26",
+     "index": 10668.05
+    },
+    {
+     "date": "2026-04-27",
+     "index": 10641.9
+    },
+    {
+     "date": "2026-04-28",
+     "index": 10622.63
+    },
+    {
+     "date": "2026-04-29",
+     "index": 10611.82
+    },
+    {
+     "date": "2026-04-30",
+     "index": 10487.91
+    },
+    {
+     "date": "2026-05-03",
+     "index": 10533.42
+    },
+    {
+     "date": "2026-05-04",
+     "index": 10564.57
+    },
+    {
+     "date": "2026-05-05",
+     "index": 10504.62
+    },
+    {
+     "date": "2026-05-06",
+     "index": 10649.25
+    },
+    {
+     "date": "2026-05-07",
+     "index": 10714.25
+    },
+    {
+     "date": "2026-05-10",
+     "index": 10663.5
+    },
+    {
+     "date": "2026-05-11",
+     "index": 10631.25
+    },
+    {
+     "date": "2026-05-12",
+     "index": 10523.92
+    },
+    {
+     "date": "2026-05-13",
+     "index": 10472.69
+    },
+    {
+     "date": "2026-05-14",
+     "index": 10493.27
+    },
+    {
+     "date": "2026-05-17",
+     "index": 10484.17
+    },
+    {
+     "date": "2026-05-18",
+     "index": 10372.1
+    },
+    {
+     "date": "2026-05-19",
+     "index": 10418.28
+    },
+    {
+     "date": "2026-05-20",
+     "index": 10352.7
+    },
+    {
+     "date": "2026-05-21",
+     "index": 10379.69
+    },
+    {
+     "date": "2026-05-24",
+     "index": 10706.7
+    },
+    {
+     "date": "2026-05-25",
+     "index": 10591.56
+    },
+    {
+     "date": "2026-05-31",
+     "index": 10554.96
+    },
+    {
+     "date": "2026-06-01",
+     "index": 10438.86
+    },
+    {
+     "date": "2026-06-02",
+     "index": 10407.45
+    },
+    {
+     "date": "2026-06-03",
+     "index": 10392.54
+    },
+    {
+     "date": "2026-06-04",
+     "index": 10335.86
+    },
+    {
+     "date": "2026-06-07",
+     "index": 10305.12
+    },
+    {
+     "date": "2026-06-08",
+     "index": 10092.04
+    },
+    {
+     "date": "2026-06-09",
+     "index": 10282.37
+    },
+    {
+     "date": "2026-06-10",
+     "index": 10289.32
+    },
+    {
+     "date": "2026-06-11",
+     "index": 10263.88
+    },
+    {
+     "date": "2026-06-14",
+     "index": 10461.0
+    },
+    {
+     "date": "2026-06-15",
+     "index": 10553.75
+    },
+    {
+     "date": "2026-06-16",
+     "index": 10551.42
+    },
+    {
+     "date": "2026-06-17",
+     "index": 10575.5
+    },
+    {
+     "date": "2026-06-18",
+     "index": 10510.92
+    },
+    {
+     "date": "2026-06-21",
+     "index": 10480.95
+    },
+    {
+     "date": "2026-06-22",
+     "index": 10446.04
+    },
+    {
+     "date": "2026-06-23",
+     "index": 10408.77
+    },
+    {
+     "date": "2026-06-24",
+     "index": 10321.23
+    },
+    {
+     "date": "2026-06-25",
+     "index": 10281.81
+    },
+    {
+     "date": "2026-06-28",
+     "index": 10293.72
+    },
+    {
+     "date": "2026-06-29",
+     "index": 10251.83
+    },
+    {
+     "date": "2026-06-30",
+     "index": 10241.75
+    },
+    {
+     "date": "2026-07-01",
+     "index": 10290.82
+    },
+    {
+     "date": "2026-07-02",
+     "index": 10211.16
+    },
+    {
+     "date": "2026-07-05",
+     "index": 10246.22
+    },
+    {
+     "date": "2026-07-06",
+     "index": 10267.16
+    },
+    {
+     "date": "2026-07-07",
+     "index": 10254.6
+    },
+    {
+     "date": "2026-07-08",
+     "index": 10176.15
+    },
+    {
+     "date": "2026-07-09",
+     "index": 10090.57
+    },
+    {
+     "date": "2026-07-12",
+     "index": 10103.22
+    },
+    {
+     "date": "2026-07-19",
+     "index": 9954.84
+    },
+    {
+     "date": "2026-07-20",
+     "index": 10083.79
+    },
+    {
+     "date": "2026-07-21",
+     "index": 10107.36
+    },
+    {
+     "date": "2026-07-22",
+     "index": 10066.51
+    },
+    {
+     "date": "2026-07-23",
+     "index": 10032.48
+    },
+    {
+     "date": "2026-07-26",
+     "index": 10003.67
+    },
+    {
+     "date": "2026-07-27",
+     "index": 10085.39
+    },
+    {
+     "date": "2026-07-28",
+     "index": 10022.69
+    },
+    {
+     "date": "2026-07-29",
+     "index": 10006.91
+    },
+    {
+     "date": "2026-07-30",
+     "index": 9920.69
+    }
+   ]
+  }
+ }
+}

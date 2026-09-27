@@ -1,0 +1,118 @@
+{
+ "months": [
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "close": [
+  4.499,
+  4.913,
+  5.084,
+  5.155,
+  5.372,
+  5.869,
+  5.613,
+  5.35,
+  5.133,
+  5.251,
+  5.139,
+  5.112,
+  5.119,
+  4.916,
+  5.092,
+  5.369,
+  5.68,
+  5.783,
+  5.748,
+  5.49,
+  5.144,
+  5.267,
+  5.536,
+  5.875
+ ],
+ "events": [
+  {
+   "month": "2024-10",
+   "sentiment": "Positive",
+   "headline": "Estithmar Holding Q.P.S.C.: announces contract award"
+  },
+  {
+   "month": "2024-12",
+   "sentiment": "Negative",
+   "headline": "Estithmar Holding Q.P.S.C.: discloses delay in project handover"
+  },
+  {
+   "month": "2025-03",
+   "sentiment": "Positive",
+   "headline": "Estithmar Holding Q.P.S.C.: announces contract award"
+  },
+  {
+   "month": "2025-06",
+   "sentiment": "Negative",
+   "headline": "Estithmar Holding Q.P.S.C.: discloses delay in project handover"
+  },
+  {
+   "month": "2025-08",
+   "sentiment": "Positive",
+   "headline": "Estithmar Holding Q.P.S.C.: announces contract award"
+  },
+  {
+   "month": "2025-11",
+   "sentiment": "Negative",
+   "headline": "Estithmar Holding Q.P.S.C.: discloses delay in project handover"
+  },
+  {
+   "month": "2026-01",
+   "sentiment": "Positive",
+   "headline": "Estithmar Holding Q.P.S.C.: announces contract award"
+  },
+  {
+   "month": "2026-04",
+   "sentiment": "Negative",
+   "headline": "Estithmar Holding Q.P.S.C.: discloses delay in project handover"
+  },
+  {
+   "month": "2026-06",
+   "sentiment": "Positive",
+   "headline": "Estithmar Holding Q.P.S.C.: announces contract award"
+  }
+ ],
+ "total_shares": 4493329500,
+ "related_parties": [
+  "Health Collective W.L.L.",
+  "Infra Road Trading",
+  "UCC Holding"
+ ],
+ "board_members": [
+  "Qatar Pension Emerging Mkts",
+  "Dunmore Partners",
+  "Hamad Al-Jaber",
+  "Aisha Al-Jaber",
+  "Abdulla Al-Emadi",
+  "Latifa Al-Emadi",
+  "Hamad Al-Sulaiti",
+  "Tariq Al-Sada",
+  "Jassim Al-Naimi"
+ ]
+}

@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------- secrets
+# The DeepSeek key. On Streamlit Community Cloud it goes in the app's Secrets
+# panel instead; locally it stays here and never leaves the machine.
+.env
+.streamlit/secrets.toml
+
+# ------------------------------------------------------- client material
+# PIH/Estithmar-supplied documents. Nothing in the app reads these at runtime —
+# they are source material for the build, and they do not belong in a repo that
+# a hosting provider clones.
+*.pdf
+
+# ------------------------------------------------------------ live data
+# Regenerated from qe.com.qa on every run, and large. The tick archive is the
+# exception worth understanding: it is the one thing that cannot be rebuilt,
+# because the exchange publishes no intraday history. Keep it OUT of git and
+# back it up off the machine that writes it.
+out/archive/
+out/raw/
+out/.cache/
+out/*.json
+out/*.html
+qe_data/
+euroland_probe.json
+
+# out/synth/ IS committed: the demo register must exist on first boot, and a
+# deployed app has no way to run the generator before the first request.
+!out/synth/
+
+# -------------------------------------------------------- local tooling
+# Editor and agent config, and the earlier cookie-based attempt the README
+# records as superseded. None of it is needed to run the app.
+.claude/
+.agents/
+test.sh
+probe_euroland.py
+
+# ------------------------------------------------------------- the usual
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.ipynb_checkpoints/

@@ -1,0 +1,23 @@
+# Light Excel-style theme to match the source dashboard.
+[theme]
+base = "light"
+primaryColor = "#0070C0"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F2F2F2"
+textColor = "#000000"
+borderColor = "#BFBFBF"
+showWidgetBorder = true
+greenColor = "#00B050"
+redColor = "#FF0000"
+blueColor = "#4472C4"
+
+[client]
+# Drops the Deploy button and the developer menu from the top bar; the app is a
+# dashboard, not an editor.
+toolbarMode = "minimal"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

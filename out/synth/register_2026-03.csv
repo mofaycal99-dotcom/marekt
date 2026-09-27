@@ -1,0 +1,238 @@
+nin,name,nationality,card_id_no,investor_type,cls,related_party,board_member,shares,pct
+10000031,Faisal Al-Dosari,QTR,0,Individuals,P,False,False,797062504,17.7388
+10000001,Health Collective W.L.L.,QTR,0,Institutions,A,True,False,343346349,7.6412
+10000032,Hamad Al-Hajri,QTR,0,Individuals,P,False,False,328951374,7.3209
+10000033,Saeed Al-Attiyah,QTR,0,Individuals,P,False,False,229265269,5.1023
+10000034,Rashid Al-Dosari,QTR,0,Individuals,A,False,False,178204952,3.966
+10000002,Infra Road Trading,QTR,0,Institutions,P,True,False,156395970,3.4806
+10000003,UCC Holding,QTR,0,Institutions,A,True,False,97875262,2.1782
+10000036,Saeed Al-Hajri,QTR,0,Individuals,P,False,False,96083949,2.1384
+10000037,Nasser Al-Misnad,QTR,0,Individuals,A,False,False,84125025,1.8722
+10000009,Helios Securities,QTR,0,Institutions,P,False,False,76016562,1.6918
+10000035,Reem Al-Sada,QTR,0,Individuals,A,False,False,73655185,1.6392
+10000004,Qatar Pension Emerging Mkts,QTR,0,Institutions,P,False,True,70306162,1.5647
+10000038,Rashid Al-Thani,QTR,0,Individuals,A,False,False,59277686,1.3192
+10000040,Hessa Al-Emadi,QTR,0,Individuals,A,False,False,58798865,1.3086
+10000039,Faisal Al-Misnad,QTR,0,Individuals,P,False,False,58290336,1.2973
+10000042,Latifa Al-Misnad,QTR,0,Individuals,A,False,False,52365940,1.1654
+10000007,Gulf Horizon Investments,QTR,0,Institutions,A,False,False,52028166,1.1579
+10000044,Hessa Al-Dosari,QTR,0,Individuals,A,False,False,51396093,1.1438
+10000041,Noora Al-Sada,QTR,0,Individuals,A,False,False,50097651,1.1149
+10000046,Reem Al-Khater,QTR,0,Individuals,P,False,False,34881033,0.7763
+10000043,Ahmed Al-Jaber,QTR,0,Individuals,A,False,False,34470612,0.7672
+10000045,Ali Al-Marri,QTR,0,Individuals,P,False,False,32102318,0.7144
+10000008,Dukhan Asset Mgmt,QTR,0,Institutions,P,False,False,31681731,0.7051
+10000048,Faisal Al-Sada,QTR,0,Individuals,A,False,False,30521156,0.6793
+10000047,Mohammed Al-Sulaiti,QTR,0,Individuals,P,False,False,29007381,0.6456
+10000006,Pinebridge Partners,QTR,0,Institutions,A,False,False,28475836,0.6337
+10000053,Sara Al-Jaber,QTR,0,Individuals,A,False,False,26890227,0.5984
+10000010,Dunmore Partners,QTR,0,Institutions,P,False,True,24511076,0.5455
+10000051,Maryam Al-Attiyah,QTR,0,Individuals,P,False,False,23640588,0.5261
+10000050,Reem Al-Buainain,QTR,0,Individuals,P,False,False,23214329,0.5166
+10000011,Zubarah Securities,QTR,0,Institutions,P,False,False,22287083,0.496
+10000052,Saeed Al-Naimi,QTR,0,Individuals,P,False,False,20400785,0.454
+10000054,Hamad Al-Jaber,QTR,0,Individuals,P,False,True,19776643,0.4401
+10000049,Noora Al-Buainain,QTR,0,Individuals,A,False,False,19373686,0.4312
+10000055,Aisha Al-Jaber,QTR,0,Individuals,P,False,True,18616317,0.4143
+10000066,Dana Al-Misnad,QTR,0,Individuals,A,False,False,18408146,0.4097
+10000012,Qatar Pension Securities,QTR,0,Institutions,P,False,False,18255413,0.4063
+10000056,Abdulla Al-Emadi,QTR,0,Individuals,P,False,True,17746062,0.3949
+10000057,Latifa Al-Emadi,QTR,0,Individuals,P,False,True,17039485,0.3792
+10000016,Marlowe Ventures,QTR,0,Institutions,A,False,False,16780074,0.3734
+10000058,Hamad Al-Sulaiti,QTR,0,Individuals,P,False,True,16341542,0.3637
+10000059,Tariq Al-Sada,QTR,0,Individuals,P,False,True,15693944,0.3493
+10000062,Khalid Al-Khater,QTR,0,Individuals,A,False,False,15236172,0.3391
+10000015,Blackwater Securities,QTR,0,Institutions,P,False,False,15158750,0.3374
+10000013,Kingsmere Frontier,QTR,0,Institutions,A,False,False,15050290,0.3349
+10000060,Jassim Al-Naimi,QTR,0,Individuals,P,False,True,15039023,0.3347
+10000147,Orion Investments,Irland,0,Institutions,A,False,False,14440107,0.3214
+10000061,Fatima Al-Kuwari,QTR,0,Individuals,P,False,False,14375104,0.3199
+10000018,Katara EM Capital,QTR,0,Institutions,P,False,False,13297817,0.2959
+10000064,Jassim Al-Attiyah,QTR,0,Individuals,P,False,False,13241747,0.2947
+10000146,Katara Advisors,CAN,0,Institutions,A,False,False,13080995,0.2911
+10000063,Shaikha Al-Thani,QTR,0,Individuals,P,False,False,12784899,0.2845
+10000065,Ahmed Al-Buainain,QTR,0,Individuals,A,False,False,12275117,0.2732
+10000017,Corniche Securities,QTR,0,Institutions,P,False,False,12130438,0.27
+10000068,Amna Al-Khater,QTR,0,Individuals,P,False,False,11841743,0.2635
+10000071,Hamad Al-Mannai,QTR,0,Individuals,A,False,False,11834944,0.2634
+10000022,Meridian Partners,QTR,0,Institutions,A,False,False,11804602,0.2627
+10000019,Ironbridge MENA Equity,QTR,0,Institutions,P,False,False,11207419,0.2494
+10000069,Nasser Al-Dosari,QTR,0,Individuals,P,False,False,11177144,0.2487
+10000216,Yousef Al-Misnad,PLS,0,Individuals,P,False,False,10994171,0.2447
+10000079,Yousef Al-Khater,QTR,0,Individuals,A,False,False,10749285,0.2392
+10000072,Hamad Al-Khater,QTR,0,Individuals,P,False,False,10640042,0.2368
+10000029,Lusail Capital,QTR,0,Institutions,A,False,False,10511061,0.2339
+10000070,Ali Al-Thani,QTR,0,Individuals,A,False,False,10387083,0.2312
+10000074,Sara Al-Khater,QTR,0,Individuals,P,False,False,9840875,0.219
+10000073,Aisha Al-Ansari,QTR,0,Individuals,P,False,False,9802943,0.2182
+10000076,Amna Al-Mannai,QTR,0,Individuals,P,False,False,9510996,0.2117
+10000023,Fairhaven Capital,QTR,0,Institutions,P,False,False,9501240,0.2115
+10000020,Dukhan Capital,QTR,0,Institutions,A,False,False,9361579,0.2083
+10000081,Rashid Al-Hajri,QTR,0,Individuals,P,False,False,9334910,0.2078
+10000024,Qatar Pension EM Capital,QTR,0,Institutions,P,False,False,9136664,0.2033
+10000080,Saeed Al-Emadi,QTR,0,Individuals,P,False,False,8871030,0.1974
+10000077,Tariq Al-Emadi,QTR,0,Individuals,P,False,False,8582664,0.191
+10000100,Saeed Al-Buainain,QTR,0,Individuals,A,False,False,8573804,0.1908
+10000089,Shaikha Al-Khater,QTR,0,Individuals,A,False,False,8446502,0.188
+10000196,Fatima Al-Jaber,UKZ,0,Individuals,P,False,False,8346505,0.1858
+10000082,Amna Al-Sada,QTR,0,Individuals,P,False,False,8200433,0.1825
+10000083,Latifa Al-Buainain,QTR,0,Individuals,P,False,False,8186454,0.1822
+10000086,Abdulla Al-Jaber,QTR,0,Individuals,P,False,False,8152152,0.1814
+10000025,Dukhan Holding,QTR,0,Institutions,P,False,False,8113059,0.1806
+10000030,Talos MENA Equity,QTR,0,Institutions,A,False,False,8071389,0.1796
+10000075,Amna Al-Jaber,QTR,0,Individuals,A,False,False,8047758,0.1791
+10000084,Khalid Al-Misnad,QTR,0,Individuals,P,False,False,7771223,0.173
+10000021,Sterling Gulf Frontier,QTR,0,Institutions,A,False,False,7607651,0.1693
+10000088,Khalid Al-Ansari,QTR,0,Individuals,P,False,False,7343466,0.1634
+10000087,Sara Al-Thani,QTR,0,Individuals,P,False,False,7215538,0.1606
+10000027,Msheireb EM Capital,QTR,0,Institutions,A,False,False,7149278,0.1591
+10000236,Dukhan Ventures,BHR,0,Institutions,A,False,False,7102896,0.1581
+10000028,Qatar Pension MENA Equity,QTR,0,Institutions,P,False,False,6984350,0.1554
+10000091,Nasser Al-Khater,QTR,0,Individuals,P,False,False,6693689,0.149
+10000101,Maryam Al-Buainain,QTR,0,Individuals,A,False,False,6495826,0.1446
+10000085,Mohammed Al-Sada,QTR,0,Individuals,A,False,False,6332050,0.1409
+10000093,Sara Al-Hajri,QTR,0,Individuals,A,False,False,6316747,0.1406
+10000139,Rashid Al-Mannai,QTR,0,Individuals,A,False,False,6233279,0.1387
+10000095,Fatima Al-Mannai,QTR,0,Individuals,P,False,False,6194413,0.1379
+10000096,Nasser Al-Thani,QTR,0,Individuals,P,False,False,6159394,0.1371
+10000103,Tariq Al-Mannai,QTR,0,Individuals,A,False,False,6116480,0.1361
+10000094,Sara Al-Misnad,QTR,0,Individuals,P,False,False,6065935,0.135
+10000098,Hamad Al-Dosari,QTR,0,Individuals,P,False,False,6052636,0.1347
+10000136,Sara Al-Mannai,QTR,0,Individuals,A,False,False,5883959,0.1309
+10000108,Tariq Al-Buainain,QTR,0,Individuals,P,False,False,5844917,0.1301
+10000107,Abdulla Al-Buainain,QTR,0,Individuals,A,False,False,5730965,0.1275
+10000149,Helios MENA Equity,UK,0,Institutions,A,False,False,5677010,0.1263
+10000097,Shaikha Al-Sulaiti,QTR,0,Individuals,A,False,False,5633159,0.1254
+10000092,Dana Al-Emadi,QTR,0,Individuals,P,False,False,5590394,0.1244
+10000102,Fatima Al-Marri,QTR,0,Individuals,P,False,False,5515596,0.1228
+10000121,Reem Al-Thani,QTR,0,Individuals,A,False,False,5446913,0.1212
+10000152,Talos Asset Mgmt,SWI,0,Institutions,A,False,False,5326511,0.1185
+10000104,Noora Al-Kuwari,QTR,0,Individuals,P,False,False,5281312,0.1175
+10000112,Tariq Al-Hajri,QTR,0,Individuals,A,False,False,5218149,0.1161
+10000106,Yousef Al-Sulaiti,QTR,0,Individuals,P,False,False,5183095,0.1154
+10000105,Noora Al-Mannai,QTR,0,Individuals,P,False,False,5097704,0.1135
+10000109,Ahmed Al-Emadi,QTR,0,Individuals,P,False,False,5021952,0.1118
+10000125,Abdulla Al-Kuwari,QTR,0,Individuals,A,False,False,4947588,0.1101
+10000113,Khalid Al-Sada,QTR,0,Individuals,P,False,False,4771272,0.1062
+10000217,Jassim Al-Thani,EGY,0,Individuals,P,False,False,4763120,0.106
+10000110,Khalid Al-Emadi,QTR,0,Individuals,P,False,False,4671650,0.104
+10000099,Aisha Al-Mannai,QTR,0,Individuals,A,False,False,4657804,0.1037
+10000114,Rashid Al-Ansari,QTR,0,Individuals,P,False,False,4619592,0.1028
+10000120,Maryam Al-Naimi,QTR,0,Individuals,P,False,False,4543518,0.1011
+10000116,Yousef Al-Emadi,QTR,0,Individuals,P,False,False,4509144,0.1004
+10000123,Hamad Al-Naimi,QTR,0,Individuals,P,False,False,4485327,0.0998
+10000124,Maryam Al-Misnad,QTR,0,Individuals,A,False,False,4417835,0.0983
+10000111,Latifa Al-Thani,QTR,0,Individuals,P,False,False,4207367,0.0936
+10000122,Latifa Al-Ansari,QTR,0,Individuals,P,False,False,4155779,0.0925
+10000117,Nasser Al-Naimi,QTR,0,Individuals,A,False,False,4143634,0.0922
+10000119,Yousef Al-Sada,QTR,0,Individuals,A,False,False,4111901,0.0915
+10000135,Aisha Al-Misnad,QTR,0,Individuals,P,False,False,4043275,0.09
+10000150,Nordhaven Emerging Mkts,SWI,0,Institutions,A,False,False,3954453,0.088
+10000127,Saeed Al-Sada,QTR,0,Individuals,P,False,False,3891295,0.0866
+10000126,Aisha Al-Buainain,QTR,0,Individuals,P,False,False,3837803,0.0854
+10000128,Maryam Al-Sulaiti,QTR,0,Individuals,P,False,False,3828952,0.0852
+10000137,Noora Al-Ansari,QTR,0,Individuals,P,False,False,3728107,0.083
+10000132,Tariq Al-Ansari,QTR,0,Individuals,P,False,False,3696304,0.0823
+10000129,Amna Al-Emadi,QTR,0,Individuals,P,False,False,3636675,0.0809
+10000197,Maryam Al-Sada,CAN,0,Individuals,P,False,False,3633988,0.0809
+10000138,Yousef Al-Hajri,QTR,0,Individuals,P,False,False,3576529,0.0796
+10000141,Jassim Al-Mannai,QTR,0,Individuals,A,False,False,3558017,0.0792
+10000133,Hessa Al-Buainain,QTR,0,Individuals,P,False,False,3533467,0.0786
+10000143,Shaikha Al-Buainain,QTR,0,Individuals,P,False,False,3532755,0.0786
+10000131,Nasser Al-Marri,QTR,0,Individuals,P,False,False,3500445,0.0779
+10000153,Fairhaven Securities,CAN,0,Institutions,P,False,False,3399424,0.0757
+10000130,Shaikha Al-Kuwari,QTR,0,Individuals,A,False,False,3341423,0.0744
+10000142,Khalid Al-Mannai,QTR,0,Individuals,P,False,False,3284182,0.0731
+10000140,Khalid Al-Attiyah,QTR,0,Individuals,P,False,False,3278299,0.073
+10000144,Ahmed Al-Sada,QTR,0,Individuals,P,False,False,3207216,0.0714
+10000218,Noora Al-Thani,IRQ,0,Individuals,P,False,False,3148796,0.0701
+10000134,Abdulla Al-Sada,QTR,0,Individuals,A,False,False,2957687,0.0658
+10000155,Talos Advisors,USA,0,Institutions,P,False,False,2772024,0.0617
+10000145,Nasser Al-Sulaiti,QTR,0,Individuals,A,False,False,2691617,0.0599
+10000151,Meridian Asset Mgmt,CYM,0,Institutions,A,False,False,2676615,0.0596
+10000156,Ardent EM Capital,CYM,0,Institutions,A,False,False,2276729,0.0507
+10000118,Hessa Al-Sada,QTR,0,Individuals,A,False,False,2171445,0.0483
+10000219,Jassim Al-Buainain,IRQ,0,Individuals,P,False,False,2075675,0.0462
+10000198,Noora Al-Khater,UKZ,0,Individuals,P,False,False,2068983,0.046
+10000157,Glenmore Capital,SDI,0,Institutions,P,False,False,1950963,0.0434
+10000159,Vantage Advisors,IRL,0,Institutions,P,False,False,1684619,0.0375
+10000161,Blackwater Partners,CAN,0,Institutions,A,False,False,1656452,0.0369
+10000220,Khalid Al-Buainain,SYR,0,Individuals,P,False,False,1648675,0.0367
+10000237,Nordhaven EM Capital,BHR,0,Institutions,A,False,False,1614144,0.0359
+10000164,Vantage Securities,SWI,0,Institutions,A,False,False,1600660,0.0356
+10000199,Jassim Al-Dosari,Irland,0,Individuals,P,False,False,1571347,0.035
+10000160,Zubarah EM Capital,IRL,0,Institutions,A,False,False,1447601,0.0322
+10000221,Jassim Al-Marri,JOR,0,Individuals,P,False,False,1302722,0.029
+10000163,Sterling Gulf Holding,USA,0,Institutions,P,False,False,1294396,0.0288
+10000222,Mohammed Al-Khater,PLS,0,Individuals,P,False,False,1262398,0.0281
+10000162,Cedar Rock MENA Equity,CYM,0,Institutions,A,False,False,1250906,0.0278
+10000165,Al Rayan Asset Mgmt,KOR,0,Institutions,P,False,False,1163634,0.0259
+10000168,Fairhaven MENA Equity,CYM,0,Institutions,A,False,False,1144652,0.0255
+10000166,Jadeite Ventures,VGB,0,Institutions,A,False,False,1099952,0.0245
+10000202,Ali Al-Buainain,KOR,0,Individuals,A,False,False,1089725,0.0243
+10000238,Al Rayan Investments,KSA,0,Institutions,P,False,False,1081780,0.0241
+10000201,Ahmed Al-Attiyah,UK,0,Individuals,A,False,False,1007871,0.0224
+10000223,Noora Al-Jaber,IRQ,0,Individuals,A,False,False,1005068,0.0224
+10000170,Vantage Frontier,USA,0,Institutions,P,False,False,954601,0.0212
+10000224,Hamad Al-Thani,IRQ,0,Individuals,A,False,False,940713,0.0209
+10000169,Corniche Advisors,USA,0,Institutions,P,False,False,931667,0.0207
+10000239,Katara Ventures,KSA,0,Institutions,A,False,False,897860,0.02
+10000175,Al Bidda Partners,UK,0,Institutions,A,False,False,878477,0.0196
+10000172,Eastvale Emerging Mkts,SWI,0,Institutions,P,False,False,871257,0.0194
+10000226,Mohammed Al-Hajri,EGY,0,Individuals,A,False,False,847122,0.0189
+10000203,Fatima Al-Emadi,Irland,0,Individuals,A,False,False,841436,0.0187
+10000178,Helios Frontier,KOR,0,Institutions,A,False,False,812806,0.0181
+10000174,Katara Holding,CAN,0,Institutions,P,False,False,805249,0.0179
+10000240,Al Bidda Asset Mgmt,OMN,0,Institutions,A,False,False,796252,0.0177
+10000173,Blackwater Emerging Mkts,UKZ,0,Institutions,P,False,False,795919,0.0177
+10000204,Hamad Al-Kuwari,CYM,0,Individuals,A,False,False,780305,0.0174
+10000177,Vantage MENA Equity,IRL,0,Institutions,A,False,False,748465,0.0167
+10000225,Maryam Al-Hajri,JOR,0,Individuals,P,False,False,718917,0.016
+10000179,Meridian Securities,KOR,0,Institutions,P,False,False,699349,0.0156
+10000176,Qatar Pension Capital,Irland,0,Institutions,P,False,False,696341,0.0155
+10000227,Mohammed Al-Dosari,JOR,0,Individuals,P,False,False,639404,0.0142
+10000171,Gulf Horizon Frontier,UK,0,Institutions,A,False,False,631759,0.0141
+10000180,Blackwater Holding,SDI,0,Institutions,A,False,False,618643,0.0138
+10000190,Dunmore Capital,Irland,0,Institutions,A,False,False,586244,0.013
+10000246,Nasser Al-Hajri,KWT,0,Individuals,P,False,False,578792,0.0129
+10000181,Pinebridge Capital,CAN,0,Institutions,P,False,False,564078,0.0126
+10000183,Brightwater Ventures,KOR,0,Institutions,P,False,False,559065,0.0124
+10000184,Lusail MENA Equity,SWI,0,Institutions,P,False,False,552471,0.0123
+10000185,Kestrel EM Capital,UK,0,Institutions,P,False,False,540528,0.012
+10000228,Maryam Al-Jaber,LBN,0,Individuals,A,False,False,530837,0.0118
+10000241,Marlowe Investments,UAE,0,Institutions,P,False,False,528653,0.0118
+10000188,Glenmore Emerging Mkts,VGB,0,Institutions,P,False,False,514500,0.0115
+10000229,Dana Al-Kuwari,LBN,0,Individuals,A,False,False,513382,0.0114
+10000206,Yousef Al-Marri,UKZ,0,Individuals,P,False,False,510677,0.0114
+10000187,Fairhaven Ventures,KOR,0,Institutions,P,False,False,493623,0.011
+10000193,Northgate Asset Mgmt,CAN,0,Institutions,P,False,False,485203,0.0108
+10000242,Marlowe Partners,KSA,0,Institutions,A,False,False,480569,0.0107
+10000192,Katara Capital,CAN,0,Institutions,A,False,False,465243,0.0104
+10000191,Doha Holding,SWI,0,Institutions,P,False,False,463977,0.0103
+10000182,Msheireb Emerging Mkts,SWI,0,Institutions,A,False,False,457139,0.0102
+10000189,Aspen Partners,VGB,0,Institutions,P,False,False,443141,0.0099
+10000232,Faisal Al-Khater,LBN,0,Individuals,A,False,False,443047,0.0099
+10000194,Corniche Asset Mgmt,VGB,0,Institutions,P,False,False,436205,0.0097
+10000230,Latifa Al-Kuwari,JOR,0,Individuals,P,False,False,432976,0.0096
+10000243,Carrick Securities,KSA,0,Institutions,P,False,False,408960,0.0091
+10000213,Maryam Al-Mannai,SDI,0,Individuals,A,False,False,402669,0.009
+10000195,Larkspur Frontier,IRL,0,Institutions,A,False,False,397406,0.0088
+10000234,Jassim Al-Ansari,JOR,0,Individuals,P,False,False,395084,0.0088
+10000207,Latifa Al-Hajri,UK,0,Individuals,P,False,False,393756,0.0088
+10000208,Hessa Al-Marri,SDI,0,Individuals,P,False,False,387603,0.0086
+10000186,Kestrel Partners,UK,0,Institutions,A,False,False,386117,0.0086
+10000235,Hessa Al-Hajri,PLS,0,Individuals,P,False,False,380443,0.0085
+10000231,Fatima Al-Misnad,EGY,0,Individuals,A,False,False,366609,0.0082
+10000233,Abdulla Al-Naimi,JOR,0,Individuals,P,False,False,366539,0.0082
+10000210,Noora Al-Sulaiti,CYM,0,Individuals,P,False,False,365487,0.0081
+10000244,Gulf Horizon Holding,KWT,0,Institutions,P,False,False,346260,0.0077
+10000205,Aisha Al-Naimi,CAN,0,Individuals,A,False,False,325581,0.0072
+10000211,Fatima Al-Attiyah,SDI,0,Individuals,P,False,False,317337,0.0071
+10000212,Abdulla Al-Ansari,CYM,0,Individuals,P,False,False,311758,0.0069
+10000247,Jassim Al-Kuwari,KSA,0,Individuals,P,False,False,288667,0.0064
+10000215,Tariq Al-Sulaiti,SWI,0,Individuals,A,False,False,286161,0.0064
+10000245,Orion Securities,BHR,0,Institutions,A,False,False,272403,0.0061
+10000214,Jassim Al-Hajri,CYM,0,Individuals,P,False,False,261778,0.0058
+10000209,Mohammed Al-Jaber,KOR,0,Individuals,A,False,False,260612,0.0058
+10000248,Amna Al-Misnad,KWT,0,Individuals,P,False,False,167738,0.0037
+10000250,Shaikha Al-Attiyah,UAE,0,Individuals,P,False,False,100160,0.0022
